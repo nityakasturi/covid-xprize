@@ -17,6 +17,8 @@ from keras.layers import Input
 from keras.layers import LSTM
 from keras.layers import Lambda
 from keras.models import Model
+import tensorflow as tf
+
 
 # See https://github.com/OxCGRT/covid-policy-tracker
 DATA_URL = "https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest.csv"
@@ -50,7 +52,7 @@ CONTEXT_COLUMNS = ['CountryName',
                    'ConfirmedDeaths',
                    'Population']
 NB_LOOKBACK_DAYS = 21
-NB_TEST_DAYS = 14
+NB_TEST_DAYS = 60
 WINDOW_SIZE = 7
 US_PREFIX = "United States / "
 NUM_TRIALS = 1
@@ -76,6 +78,8 @@ class XPrizePredictor(object):
     """
 
     def __init__(self, path_to_model_weights, data_url):
+        physical_devices = tf.config.list_physical_devices('GPU')
+        tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
         if path_to_model_weights:
 
             # Load model weights
@@ -479,7 +483,7 @@ class XPrizePredictor(object):
     @staticmethod
     def _most_affected_geos(df, nb_geos, min_historical_days):
         """
-        Returns the list of most affected countries, in terms of confirmed deaths.
+        Returns the list of most affected countries, in terms of the prediction ratio.
         :param df: the data frame containing the historical data
         :param nb_geos: the number of geos to return
         :param min_historical_days: the minimum days of historical data the countries must have
@@ -487,9 +491,9 @@ class XPrizePredictor(object):
         country names that have at least min_look_back_days data points.
         """
         # By default use most affected geos with enough history
-        gdf = df.groupby('GeoID')['ConfirmedDeaths'].agg(['max', 'count']).sort_values(by='max', ascending=False)
+        gdf = df.groupby('GeoID')['PredictionRatio'].agg(['max', 'count']).sort_values(by='max', ascending=False)
         filtered_gdf = gdf[gdf["count"] > min_historical_days]
-        geos = list(filtered_gdf.head(nb_geos).index)
+        geos = list(filtered_gdf.head(int(nb_geos * 0.75)).index) + list(filtered_gdf.tail(int(nb_geos * 0.25)).index)
         return geos
 
     # Shuffling data prior to train/val split
