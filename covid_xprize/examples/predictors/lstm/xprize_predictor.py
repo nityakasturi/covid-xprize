@@ -15,6 +15,7 @@ from keras.constraints import Constraint
 from keras.layers import Dense
 from keras.layers import Input
 from keras.layers import LSTM
+from keras.layers import Dropout
 from keras.layers import Lambda
 from keras.models import Model
 import tensorflow as tf
@@ -52,12 +53,12 @@ CONTEXT_COLUMNS = ['CountryName',
                    'ConfirmedDeaths',
                    'Population']
 NB_LOOKBACK_DAYS = 21
-NB_TEST_DAYS = 60
+NB_TEST_DAYS = 14
 WINDOW_SIZE = 7
 US_PREFIX = "United States / "
 NUM_TRIALS = 1
 LSTM_SIZE = 32
-MAX_NB_COUNTRIES = 20
+MAX_NB_COUNTRIES = 30
 
 
 class Positive(Constraint):
@@ -438,7 +439,7 @@ class XPrizePredictor(object):
                                                           nb_action=X_action.shape[-1],
                                                           lstm_size=LSTM_SIZE,
                                                           nb_lookback_days=NB_LOOKBACK_DAYS)
-            history = self._train_model(training_model, X_context, X_action, y, epochs=1000, verbose=0)
+            history = self._train_model(training_model, X_context, X_action, y, epochs=2500, verbose=0)
             top_epoch = np.argmin(history.history['val_loss'])
             train_loss = history.history['loss'][top_epoch]
             val_loss = history.history['val_loss'][top_epoch]
@@ -493,8 +494,8 @@ class XPrizePredictor(object):
         # By default use most affected geos with enough history
         gdf = df.groupby('GeoID')['PredictionRatio'].agg(['max', 'count']).sort_values(by='max', ascending=False)
         filtered_gdf = gdf[gdf["count"] > min_historical_days]
-        geos = list(filtered_gdf.head(int(nb_geos * 0.75)).index) + list(filtered_gdf.tail(int(nb_geos * 0.25)).index)
-        return geos
+        geos = list(filtered_gdf.head(int(nb_geos * 0.8)).index) + list(filtered_gdf.tail(int(nb_geos * 0.2)).index)
+        return list(set(geos))
 
     # Shuffling data prior to train/val split
     def _permute_data(self, X_context, X_action, y, seed=301):
@@ -512,9 +513,10 @@ class XPrizePredictor(object):
         context_input = Input(shape=(nb_lookback_days, nb_context),
                               name='context_input')
         x = LSTM(lstm_size, name='context_lstm')(context_input)
+        dropout = Dropout(0.2)(x)
         context_output = Dense(units=1,
                                activation='softplus',
-                               name='context_dense')(x)
+                               name='context_dense')(dropout)
 
         # Create action encoder
         # Every aspect is monotonic and nonnegative except final bias
@@ -526,10 +528,11 @@ class XPrizePredictor(object):
                  bias_constraint=Positive(),
                  return_sequences=False,
                  name='action_lstm')(action_input)
+        dropout_action = Dropout(0.2)(x)
         action_output = Dense(units=1,
                               activation='sigmoid',
                               kernel_constraint=Positive(),
-                              name='action_dense')(x)
+                              name='action_dense')(dropout_action)
 
         # Create prediction model
         model_output = Lambda(_combine_r_and_d, name='prediction')(
