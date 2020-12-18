@@ -9,7 +9,7 @@ import pandas as pd
 
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_FILE = os.path.join(ROOT_DIR, "models", "model.pkl")
+MODEL_FILE = os.path.join(ROOT_DIR, "models", "model_bayesian.pkl")
 DATA_FILE = os.path.join(ROOT_DIR, 'data', "OxCGRT_latest.csv")
 ID_COLS = ['CountryName',
            'RegionName',
@@ -30,7 +30,7 @@ NPI_COLS = ['C1_School closing',
             'H6_Facial Coverings']
 NB_LOOKBACK_DAYS = 30
 # For testing, restrict training data to that before a hypothetical predictor submission date
-HYPOTHETICAL_SUBMISSION_DATE = np.datetime64("2020-07-31")
+HYPOTHETICAL_SUBMISSION_DATE = np.datetime64("2020-12-22")
 
 
 def predict(start_date: str,

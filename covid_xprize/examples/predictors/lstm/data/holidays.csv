@@ -1,0 +1,1122 @@
+countryOrRegion,holidayName,normalizeHolidayName,isPaidTimeOff,countryRegionCode,date
+Argentina,Año Nuevo [New Year's Day],Año Nuevo [New Year's Day],,AR,2020-01-01
+Australia,New Year's Day,New Year's Day,,AU,2020-01-01
+Austria,Neujahr,Neujahr,,AT,2020-01-01
+Belarus,Новый год,Новый год,,BY,2020-01-01
+Belgium,Nieuwjaarsdag,Nieuwjaarsdag,,BE,2020-01-01
+Brazil,Ano novo,Ano novo,,BR,2020-01-01
+Canada,New Year's Day,New Year's Day,,CA,2020-01-01
+Colombia,Año Nuevo [New Year's Day],Año Nuevo [New Year's Day],,CO,2020-01-01
+Croatia,Nova Godina,Nova Godina,,HR,2020-01-01
+Czech,Den obnovy samostatného českého státu,Den obnovy samostatného českého státu,,CZ,2020-01-01
+Denmark,Nytårsdag,Nytårsdag,,DK,2020-01-01
+England,New Year's Day,New Year's Day,,,2020-01-01
+Finland,Uudenvuodenpäivä,Uudenvuodenpäivä,,FI,2020-01-01
+France,Jour de l'an,Jour de l'an,,FR,2020-01-01
+Germany,Neujahr,Neujahr,,DE,2020-01-01
+Hungary,Újév,Újév,,HU,2020-01-01
+Ireland,New Year's Day,New Year's Day,,IE,2020-01-01
+Isle of Man,New Year's Day,New Year's Day,,IM,2020-01-01
+Italy,Capodanno,Capodanno,,IT,2020-01-01
+Japan,元日,元日,,JP,2020-01-01
+Mexico,Año Nuevo [New Year's Day],Año Nuevo [New Year's Day],,MX,2020-01-01
+Netherlands,Nieuwjaarsdag,Nieuwjaarsdag,,NL,2020-01-01
+New Zealand,New Year's Day,New Year's Day,,NZ,2020-01-01
+Northern Ireland,New Year's Day,New Year's Day,,,2020-01-01
+Norway,Første nyttårsdag,Første nyttårsdag,,NO,2020-01-01
+Poland,Nowy Rok,Nowy Rok,,PL,2020-01-01
+Portugal,Ano Novo,Ano Novo,,PT,2020-01-01
+Scotland,New Year's Day,New Year's Day,,,2020-01-01
+Slovenia,novo leto,novo leto,,SI,2020-01-01
+South Africa,New Year's Day,New Year's Day,,ZA,2020-01-01
+Spain,Año nuevo,Año nuevo,,ES,2020-01-01
+Sweden,Nyårsdagen,Nyårsdagen,,SE,2020-01-01
+Switzerland,Neujahrestag,Neujahrestag,,CH,2020-01-01
+Ukraine,Новий рік,Новий рік,,UA,2020-01-01
+United Kingdom,New Year's Day,New Year's Day,True,GB,2020-01-01
+United States,New Year's Day,New Year's Day,True,US,2020-01-01
+Wales,New Year's Day,New Year's Day,,,2020-01-01
+Belarus,Новый год,Новый год,,BY,2020-01-02
+New Zealand,Day after New Year's Day,Day after New Year's Day,,NZ,2020-01-02
+Scotland,New Year Holiday,New Year Holiday,,,2020-01-02
+Slovenia,novo leto,novo leto,,SI,2020-01-02
+United Kingdom,New Year Holiday [Scotland],New Year Holiday,True,GB,2020-01-02
+Norway,Søndag,Søndag,,NO,2020-01-05
+Sweden,Söndag,Söndag,,SE,2020-01-05
+Austria,Heilige Drei Könige,Heilige Drei Könige,,AT,2020-01-06
+Colombia,Día de los Reyes Magos [Epiphany],Día de los Reyes Magos [Epiphany],,CO,2020-01-06
+Croatia,Sveta tri kralja,Sveta tri kralja,,HR,2020-01-06
+Finland,Loppiainen,Loppiainen,,FI,2020-01-06
+Italy,Epifania del Signore,Epifania del Signore,,IT,2020-01-06
+Poland,Święto Trzech Króli,Święto Trzech Króli,,PL,2020-01-06
+Spain,Epifanía del Señor,Epifanía del Señor,,ES,2020-01-06
+Sweden,Trettondedag jul,Trettondedag jul,,SE,2020-01-06
+Belarus,Рождество Христово (православное Рождество),Рождество Христово (православное Рождество),,BY,2020-01-07
+Ukraine,Різдво Христове (православне),Різдво Христове (православне),,UA,2020-01-07
+Norway,Søndag,Søndag,,NO,2020-01-12
+Sweden,Söndag,Söndag,,SE,2020-01-12
+Japan,成人の日,成人の日,,JP,2020-01-13
+India,Makar Sankranti / Pongal,Makar Sankranti / Pongal,False,IN,2020-01-14
+Norway,Søndag,Søndag,,NO,2020-01-19
+Sweden,Söndag,Söndag,,SE,2020-01-19
+United States,Martin Luther King Jr. Day,Martin Luther King Jr. Day,,US,2020-01-20
+Australia,Australia Day,Australia Day,,AU,2020-01-26
+India,Republic Day,Republic Day,True,IN,2020-01-26
+Norway,Søndag,Søndag,,NO,2020-01-26
+Sweden,Söndag,Söndag,,SE,2020-01-26
+Australia,Australia Day (Observed),Australia Day,,AU,2020-01-27
+Norway,Søndag,Søndag,,NO,2020-02-02
+Sweden,Söndag,Söndag,,SE,2020-02-02
+Mexico,Día de la Constitución [Constitution Day] (Observed),Día de la Constitución [Constitution Day],,MX,2020-02-03
+Mexico,Día de la Constitución [Constitution Day],Día de la Constitución [Constitution Day],,MX,2020-02-05
+New Zealand,Waitangi Day,Waitangi Day,,NZ,2020-02-06
+Slovenia,Prešernov dan,Prešernov dan,,SI,2020-02-08
+Norway,Søndag,Søndag,,NO,2020-02-09
+Sweden,Söndag,Söndag,,SE,2020-02-09
+Japan,建国記念の日,建国記念の日,,JP,2020-02-11
+Norway,Søndag,Søndag,,NO,2020-02-16
+Sweden,Söndag,Söndag,,SE,2020-02-16
+Canada,Family Day,Family Day,,CA,2020-02-17
+United States,Washington's Birthday,Washington's Birthday,True,US,2020-02-17
+Japan,天皇誕生日,天皇誕生日,,JP,2020-02-23
+Norway,Søndag,Søndag,,NO,2020-02-23
+Sweden,Söndag,Söndag,,SE,2020-02-23
+Argentina,Día de Carnaval [Carnival's Day],Día de Carnaval [Carnival's Day],,AR,2020-02-24
+Japan,振替休日,振替休日,,JP,2020-02-24
+Argentina,Día de Carnaval [Carnival's Day],Día de Carnaval [Carnival's Day],,AR,2020-02-25
+Brazil,Carnaval,Carnaval,,BR,2020-02-25
+Brazil,Quarta-feira de cinzas (Início da Quaresma),Quarta-feira de cinzas (Início da Quaresma),,BR,2020-02-26
+Norway,Søndag,Søndag,,NO,2020-03-01
+Sweden,Söndag,Söndag,,SE,2020-03-01
+Belarus,День женщин,День женщин,,BY,2020-03-08
+Norway,Søndag,Søndag,,NO,2020-03-08
+Sweden,Söndag,Söndag,,SE,2020-03-08
+Ukraine,Міжнародний жіночий день,Міжнародний жіночий день,,UA,2020-03-08
+Hungary,Nemzeti ünnep,Nemzeti ünnep,,HU,2020-03-15
+Norway,Søndag,Søndag,,NO,2020-03-15
+Sweden,Söndag,Söndag,,SE,2020-03-15
+Mexico,Natalicio de Benito Juárez [Benito Juárez's birthday] (Observed),Natalicio de Benito Juárez [Benito Juárez's birthday],,MX,2020-03-16
+Ireland,St. Patrick's Day,St. Patrick's Day,,IE,2020-03-17
+Northern Ireland,St. Patrick's Day,St. Patrick's Day,,,2020-03-17
+United Kingdom,St. Patrick's Day [Northern Ireland],St. Patrick's Day,False,GB,2020-03-17
+Japan,春分の日,春分の日,,JP,2020-03-20
+Mexico,Natalicio de Benito Juárez [Benito Juárez's birthday],Natalicio de Benito Juárez [Benito Juárez's birthday],,MX,2020-03-21
+South Africa,Human Rights Day,Human Rights Day,,ZA,2020-03-21
+Norway,Søndag,Søndag,,NO,2020-03-22
+Sweden,Söndag,Söndag,,SE,2020-03-22
+Colombia,Día de San José [Saint Joseph's Day](Observed),Día de San José [Saint Joseph's Day],,CO,2020-03-23
+Argentina,Día Nacional de la Memoria por la Verdad y la Justicia [Memory's National Day for the Truth and Justice],Día Nacional de la Memoria por la Verdad y la Justicia [Memory's National Day for the Truth and Justice],,AR,2020-03-24
+Norway,Søndag,Søndag,,NO,2020-03-29
+Sweden,Söndag,Söndag,,SE,2020-03-29
+Argentina,Día del Veterano y de los Caidos en la Guerra de Malvinas [Veterans Day and the Fallen in the Malvinas War],Día del Veterano y de los Caidos en la Guerra de Malvinas [Veterans Day and the Fallen in the Malvinas War],,AR,2020-04-02
+Denmark,Palmesøndag,Palmesøndag,,DK,2020-04-05
+Norway,Søndag,Søndag,,NO,2020-04-05
+Sweden,Söndag,Söndag,,SE,2020-04-05
+Argentina,Semana Santa (Jueves Santo)  [Holy day (Holy Thursday)],Semana Santa (Jueves Santo)  [Holy day (Holy Thursday)],,AR,2020-04-09
+Colombia,Jueves Santo [Maundy Thursday],Jueves Santo [Maundy Thursday],,CO,2020-04-09
+Denmark,Skærtorsdag,Skærtorsdag,,DK,2020-04-09
+Norway,Skjærtorsdag,Skjærtorsdag,,NO,2020-04-09
+Argentina,Semana Santa (Viernes Santo)  [Holy day (Holy Friday)],Semana Santa (Viernes Santo)  [Holy day (Holy Friday)],,AR,2020-04-10
+Australia,Good Friday,Good Friday,,AU,2020-04-10
+Brazil,Sexta-feira Santa,Sexta-feira Santa,,BR,2020-04-10
+Canada,Good Friday,Good Friday,,CA,2020-04-10
+Colombia,Viernes Santo [Good Friday],Viernes Santo [Good Friday],,CO,2020-04-10
+Czech,Velký pátek,Velký pátek,,CZ,2020-04-10
+Denmark,Langfredag,Langfredag,,DK,2020-04-10
+England,Good Friday,Good Friday,,,2020-04-10
+Finland,Pitkäperjantai,Pitkäperjantai,,FI,2020-04-10
+Germany,Karfreitag,Karfreitag,,DE,2020-04-10
+Hungary,Nagypéntek,Nagypéntek,,HU,2020-04-10
+Isle of Man,Good Friday,Good Friday,,IM,2020-04-10
+Netherlands,Goede Vrijdag,Goede Vrijdag,,NL,2020-04-10
+New Zealand,Good Friday,Good Friday,,NZ,2020-04-10
+Northern Ireland,Good Friday,Good Friday,,,2020-04-10
+Norway,Langfredag,Langfredag,,NO,2020-04-10
+Portugal,Sexta-feira Santa,Sexta-feira Santa,,PT,2020-04-10
+Scotland,Good Friday,Good Friday,,,2020-04-10
+South Africa,Good Friday,Good Friday,,ZA,2020-04-10
+Sweden,Långfredagen,Långfredagen,,SE,2020-04-10
+Switzerland,Karfreitag,Karfreitag,,CH,2020-04-10
+United Kingdom,Good Friday,Good Friday,True,GB,2020-04-10
+Wales,Good Friday,Good Friday,,,2020-04-10
+Argentina,Día de Pascuas [Easter Day],Día de Pascuas [Easter Day],,AR,2020-04-12
+Belgium,Pasen,Pasen,,BE,2020-04-12
+Brazil,Páscoa,Páscoa,,BR,2020-04-12
+Croatia,Uskrs,Uskrs,,HR,2020-04-12
+Denmark,Påskedag,Påskedag,,DK,2020-04-12
+Finland,Pääsiäispäivä,Pääsiäispäivä,,FI,2020-04-12
+Hungary,Húsvét,Húsvét,,HU,2020-04-12
+Italy,Pasqua di Resurrezione,Pasqua di Resurrezione,,IT,2020-04-12
+Netherlands,Eerste paasdag,Eerste paasdag,,NL,2020-04-12
+Norway,"Første påskedag, Søndag","Første påskedag, Søndag",,NO,2020-04-12
+Poland,Niedziela Wielkanocna,Niedziela Wielkanocna,,PL,2020-04-12
+Portugal,Páscoa,Páscoa,,PT,2020-04-12
+Sweden,"Påskdagen, Söndag","Påskdagen, Söndag",,SE,2020-04-12
+Switzerland,Ostern,Ostern,,CH,2020-04-12
+Australia,Easter Monday,Easter Monday,,AU,2020-04-13
+Austria,Ostermontag,Ostermontag,,AT,2020-04-13
+Belgium,Paasmaandag,Paasmaandag,,BE,2020-04-13
+Croatia,Uskrsni ponedjeljak,Uskrsni ponedjeljak,,HR,2020-04-13
+Czech,Velikonoční pondělí,Velikonoční pondělí,,CZ,2020-04-13
+Denmark,Anden påskedag,Anden påskedag,,DK,2020-04-13
+England,Easter Monday,Easter Monday,,,2020-04-13
+Finland,2. pääsiäispäivä,2. pääsiäispäivä,,FI,2020-04-13
+France,Lundi de Pâques,Lundi de Pâques,,FR,2020-04-13
+Germany,Ostermontag,Ostermontag,,DE,2020-04-13
+Hungary,Húsvét Hétfő,Húsvét Hétfő,,HU,2020-04-13
+Ireland,Easter Monday,Easter Monday,,IE,2020-04-13
+Isle of Man,Easter Monday,Easter Monday,,IM,2020-04-13
+Italy,Lunedì dell'Angelo,Lunedì dell'Angelo,,IT,2020-04-13
+Netherlands,Tweede paasdag,Tweede paasdag,,NL,2020-04-13
+New Zealand,Easter Monday,Easter Monday,,NZ,2020-04-13
+Northern Ireland,Easter Monday,Easter Monday,,,2020-04-13
+Norway,Andre påskedag,Andre påskedag,,NO,2020-04-13
+Poland,Poniedziałek Wielkanocny,Poniedziałek Wielkanocny,,PL,2020-04-13
+Slovenia,Velikonočni ponedeljek,Velikonočni ponedeljek,,SI,2020-04-13
+South Africa,Family Day,Family Day,,ZA,2020-04-13
+Sweden,Annandag påsk,Annandag påsk,,SE,2020-04-13
+Switzerland,Ostermontag,Ostermontag,,CH,2020-04-13
+United Kingdom,"Easter Monday [England, Wales, Northern Ireland]",Easter Monday,True,GB,2020-04-13
+Wales,Easter Monday,Easter Monday,,,2020-04-13
+Norway,Søndag,Søndag,,NO,2020-04-19
+Sweden,Söndag,Söndag,,SE,2020-04-19
+Ukraine,Пасха (Великдень),Пасха (Великдень),,UA,2020-04-19
+Brazil,Tiradentes,Tiradentes,,BR,2020-04-21
+Australia,Anzac Day,Anzac Day,,AU,2020-04-25
+Italy,Festa della Liberazione,Festa della Liberazione,,IT,2020-04-25
+New Zealand,Anzac Day,Anzac Day,,NZ,2020-04-25
+Portugal,Dia da Liberdade,Dia da Liberdade,,PT,2020-04-25
+Norway,Søndag,Søndag,,NO,2020-04-26
+Sweden,Söndag,Söndag,,SE,2020-04-26
+Netherlands,Koningsdag,Koningsdag,,NL,2020-04-27
+New Zealand,Anzac Day (Observed),Anzac Day,,NZ,2020-04-27
+Slovenia,dan upora proti okupatorju,dan upora proti okupatorju,,SI,2020-04-27
+South Africa,Freedom Day,Freedom Day,,ZA,2020-04-27
+Belarus,Радуница,Радуница,,BY,2020-04-28
+Japan,昭和の日,昭和の日,,JP,2020-04-29
+Argentina,Día del Trabajo [Labour Day],Día del Trabajo [Labour Day],,AR,2020-05-01
+Austria,Staatsfeiertag,Staatsfeiertag,,AT,2020-05-01
+Belarus,Праздник труда,Праздник труда,,BY,2020-05-01
+Belgium,Dag van de Arbeid,Dag van de Arbeid,,BE,2020-05-01
+Brazil,Dia Mundial do Trabalho,Dia Mundial do Trabalho,,BR,2020-05-01
+Colombia,Día del Trabajo [Labour Day],Día del Trabajo [Labour Day],,CO,2020-05-01
+Croatia,Međunarodni praznik rada,Međunarodni praznik rada,,HR,2020-05-01
+Czech,Svátek práce,Svátek práce,,CZ,2020-05-01
+Finland,Vappu,Vappu,,FI,2020-05-01
+France,Fête du Travail,Fête du Travail,,FR,2020-05-01
+Germany,Erster Mai,Erster Mai,,DE,2020-05-01
+Hungary,A Munka ünnepe,A Munka ünnepe,,HU,2020-05-01
+India,Labour Day,Labour Day,False,IN,2020-05-01
+Italy,Festa dei Lavoratori,Festa dei Lavoratori,,IT,2020-05-01
+Mexico,Día del Trabajo [Labour Day],Día del Trabajo [Labour Day],,MX,2020-05-01
+Norway,Arbeidernes dag,Arbeidernes dag,,NO,2020-05-01
+Poland,Święto Państwowe,Święto Państwowe,,PL,2020-05-01
+Portugal,Dia do Trabalhador,Dia do Trabalhador,,PT,2020-05-01
+Slovenia,praznik dela,praznik dela,,SI,2020-05-01
+South Africa,Workers' Day,Workers' Day,,ZA,2020-05-01
+Spain,Día del Trabajador,Día del Trabajador,,ES,2020-05-01
+Sweden,Första maj,Första maj,,SE,2020-05-01
+Ukraine,День праці,День праці,,UA,2020-05-01
+Slovenia,praznik dela,praznik dela,,SI,2020-05-02
+Japan,憲法記念日,憲法記念日,,JP,2020-05-03
+Norway,Søndag,Søndag,,NO,2020-05-03
+Poland,Święto Narodowe Trzeciego Maja,Święto Narodowe Trzeciego Maja,,PL,2020-05-03
+Sweden,Söndag,Söndag,,SE,2020-05-03
+Ireland,May Day,May Day,,IE,2020-05-04
+Japan,みどりの日,みどりの日,,JP,2020-05-04
+Japan,こどもの日,こどもの日,,JP,2020-05-05
+Netherlands,Bevrijdingsdag,Bevrijdingsdag,,NL,2020-05-05
+Japan,振替休日,振替休日,,JP,2020-05-06
+Czech,Den vítězství,Den vítězství,,CZ,2020-05-08
+Denmark,Store bededag,Store bededag,,DK,2020-05-08
+England,May Day,May Day,,,2020-05-08
+France,Armistice 1945,Armistice 1945,,FR,2020-05-08
+Isle of Man,May Day,May Day,,IM,2020-05-08
+Northern Ireland,May Day,May Day,,,2020-05-08
+Scotland,May Day,May Day,,,2020-05-08
+United Kingdom,May Day,May Day,True,GB,2020-05-08
+Wales,May Day,May Day,,,2020-05-08
+Belarus,День Победы,День Победы,,BY,2020-05-09
+Ukraine,День перемоги,День перемоги,,UA,2020-05-09
+Norway,Søndag,Søndag,,NO,2020-05-10
+Sweden,Söndag,Söndag,,SE,2020-05-10
+Norway,"Grunnlovsdag, Søndag","Grunnlovsdag, Søndag",,NO,2020-05-17
+Sweden,Söndag,Söndag,,SE,2020-05-17
+Canada,Victoria Day,Victoria Day,,CA,2020-05-18
+Austria,Christi Himmelfahrt,Christi Himmelfahrt,,AT,2020-05-21
+Belgium,O.L.H. Hemelvaart,O.L.H. Hemelvaart,,BE,2020-05-21
+Denmark,Kristi himmelfartsdag,Kristi himmelfartsdag,,DK,2020-05-21
+Finland,Helatorstai,Helatorstai,,FI,2020-05-21
+France,Ascension,Ascension,,FR,2020-05-21
+Germany,Christi Himmelfahrt,Christi Himmelfahrt,,DE,2020-05-21
+Netherlands,Hemelvaart,Hemelvaart,,NL,2020-05-21
+Norway,Kristi himmelfartsdag,Kristi himmelfartsdag,,NO,2020-05-21
+Sweden,Kristi himmelsfärdsdag,Kristi himmelsfärdsdag,,SE,2020-05-21
+Switzerland,Auffahrt,Auffahrt,,CH,2020-05-21
+Norway,Søndag,Søndag,,NO,2020-05-24
+Sweden,Söndag,Söndag,,SE,2020-05-24
+Argentina,Día de la Revolucion de Mayo [May Revolution Day],Día de la Revolucion de Mayo [May Revolution Day],,AR,2020-05-25
+Colombia,Ascensión del señor [Ascension of Jesus](Observed),Ascensión del señor [Ascension of Jesus],,CO,2020-05-25
+England,Spring Bank Holiday,Spring Bank Holiday,,,2020-05-25
+Isle of Man,Spring Bank Holiday,Spring Bank Holiday,,IM,2020-05-25
+Northern Ireland,Spring Bank Holiday,Spring Bank Holiday,,,2020-05-25
+Scotland,Spring Bank Holiday,Spring Bank Holiday,,,2020-05-25
+United Kingdom,Spring Bank Holiday,Spring Bank Holiday,True,GB,2020-05-25
+United States,Memorial Day,Memorial Day,True,US,2020-05-25
+Wales,Spring Bank Holiday,Spring Bank Holiday,,,2020-05-25
+Belgium,Pinksteren,Pinksteren,,BE,2020-05-31
+Denmark,Pinsedag,Pinsedag,,DK,2020-05-31
+Finland,Helluntaipäivä,Helluntaipäivä,,FI,2020-05-31
+Hungary,Pünkösd,Pünkösd,,HU,2020-05-31
+Netherlands,Eerste Pinksterdag,Eerste Pinksterdag,,NL,2020-05-31
+Norway,"Første pinsedag, Søndag","Første pinsedag, Søndag",,NO,2020-05-31
+Poland,Zielone Świątki,Zielone Świątki,,PL,2020-05-31
+Sweden,"Pingstdagen, Söndag","Pingstdagen, Söndag",,SE,2020-05-31
+Switzerland,Pfingsten,Pfingsten,,CH,2020-05-31
+Austria,Pfingstmontag,Pfingstmontag,,AT,2020-06-01
+Belgium,Pinkstermaandag,Pinkstermaandag,,BE,2020-06-01
+Denmark,Anden pinsedag,Anden pinsedag,,DK,2020-06-01
+France,Lundi de Pentecôte,Lundi de Pentecôte,,FR,2020-06-01
+Germany,Pfingstmontag,Pfingstmontag,,DE,2020-06-01
+Hungary,Pünkösdhétfő,Pünkösdhétfő,,HU,2020-06-01
+Ireland,June Bank Holiday,June Bank Holiday,,IE,2020-06-01
+Netherlands,Tweede Pinksterdag,Tweede Pinksterdag,,NL,2020-06-01
+New Zealand,Queen's Birthday,Queen's Birthday,,NZ,2020-06-01
+Norway,Andre pinsedag,Andre pinsedag,,NO,2020-06-01
+Switzerland,Pfingstmontag,Pfingstmontag,,CH,2020-06-01
+Italy,Festa della Repubblica,Festa della Repubblica,,IT,2020-06-02
+Isle of Man,TT Bank Holiday,TT Bank Holiday,,IM,2020-06-05
+Sweden,Sveriges nationaldag,Sveriges nationaldag,,SE,2020-06-06
+Norway,Søndag,Søndag,,NO,2020-06-07
+Sweden,Söndag,Söndag,,SE,2020-06-07
+Ukraine,Трійця,Трійця,,UA,2020-06-07
+Portugal,Dia de Portugal,Dia de Portugal,,PT,2020-06-10
+Austria,Fronleichnam,Fronleichnam,,AT,2020-06-11
+Brazil,Corpus Christi,Corpus Christi,,BR,2020-06-11
+Croatia,Tijelovo,Tijelovo,,HR,2020-06-11
+Poland,Dzień Bożego Ciała,Dzień Bożego Ciała,,PL,2020-06-11
+Portugal,Corpo de Deus,Corpo de Deus,,PT,2020-06-11
+Norway,Søndag,Søndag,,NO,2020-06-14
+Sweden,Söndag,Söndag,,SE,2020-06-14
+Colombia,Corpus Christi [Corpus Christi](Observed),Corpus Christi [Corpus Christi],,CO,2020-06-15
+South Africa,Youth Day,Youth Day,,ZA,2020-06-16
+Argentina,Día Pase a la Inmortalidad del General Martín Miguel de Güemes [Day Pass to the Immortality of General Martín Miguel de Güemes],Día Pase a la Inmortalidad del General Martín Miguel de Güemes [Day Pass to the Immortality of General Martín Miguel de Güemes],,AR,2020-06-17
+Finland,Juhannusaatto,Juhannusaatto,,FI,2020-06-19
+Sweden,Midsommarafton,Midsommarafton,,SE,2020-06-19
+Argentina,Día Pase a la Inmortalidad del General D. Manuel Belgrano [Day Pass to the Immortality of General D. Manuel Belgrano],Día Pase a la Inmortalidad del General D. Manuel Belgrano [Day Pass to the Immortality of General D. Manuel Belgrano],,AR,2020-06-20
+Finland,Juhannuspäivä,Juhannuspäivä,,FI,2020-06-20
+Sweden,Midsommardagen,Midsommardagen,,SE,2020-06-20
+Norway,Søndag,Søndag,,NO,2020-06-21
+Sweden,Söndag,Söndag,,SE,2020-06-21
+Colombia,Sagrado Corazón [Sacred Heart](Observed),Sagrado Corazón [Sacred Heart],,CO,2020-06-22
+Croatia,Dan antifašističke borbe,Dan antifašističke borbe,,HR,2020-06-22
+Slovenia,dan državnosti,dan državnosti,,SI,2020-06-25
+Norway,Søndag,Søndag,,NO,2020-06-28
+Sweden,Söndag,Söndag,,SE,2020-06-28
+Ukraine,День Конституції України,День Конституції України,,UA,2020-06-28
+Colombia,San Pedro y San Pablo [Saint Peter and Saint Paul],San Pedro y San Pablo [Saint Peter and Saint Paul],,CO,2020-06-29
+Canada,Canada Day,Canada Day,,CA,2020-07-01
+Belarus,День Независимости Республики Беларусь (День Республики),День Независимости Республики Беларусь (День Республики),,BY,2020-07-03
+United States,Independence Day (Observed),Independence Day,True,US,2020-07-03
+United States,Independence Day,Independence Day,True,US,2020-07-04
+Czech,Den slovanských věrozvěstů Cyrila a Metoděje,Den slovanských věrozvěstů Cyrila a Metoděje,,CZ,2020-07-05
+Isle of Man,Tynwald Day,Tynwald Day,,IM,2020-07-05
+Norway,Søndag,Søndag,,NO,2020-07-05
+Sweden,Söndag,Söndag,,SE,2020-07-05
+Czech,Den upálení mistra Jana Husa,Den upálení mistra Jana Husa,,CZ,2020-07-06
+Argentina,Día de la Independencia [Independence Day],Día de la Independencia [Independence Day],,AR,2020-07-09
+Northern Ireland,Battle of the Boyne,Battle of the Boyne,,,2020-07-12
+Norway,Søndag,Søndag,,NO,2020-07-12
+Sweden,Söndag,Söndag,,SE,2020-07-12
+United Kingdom,Battle of the Boyne [Northern Ireland],Battle of the Boyne,False,GB,2020-07-12
+France,Fête nationale,Fête nationale,,FR,2020-07-14
+Norway,Søndag,Søndag,,NO,2020-07-19
+Sweden,Söndag,Söndag,,SE,2020-07-19
+Colombia,Día de la Independencia [Independence Day],Día de la Independencia [Independence Day],,CO,2020-07-20
+Belgium,Nationale feestdag,Nationale feestdag,,BE,2020-07-21
+Japan,海の日,海の日,,JP,2020-07-23
+Japan,体育の日,体育の日,,JP,2020-07-24
+Norway,Søndag,Søndag,,NO,2020-07-26
+Sweden,Söndag,Söndag,,SE,2020-07-26
+Switzerland,Nationalfeiertag,Nationalfeiertag,,CH,2020-08-01
+Norway,Søndag,Søndag,,NO,2020-08-02
+Sweden,Söndag,Söndag,,SE,2020-08-02
+Canada,Civic Holiday,Civic Holiday,,CA,2020-08-03
+Ireland,Summer Bank Holiday,Summer Bank Holiday,,IE,2020-08-03
+Scotland,Summer Bank Holiday,Summer Bank Holiday,,,2020-08-03
+United Kingdom,Summer Bank Holiday [Scotland],Summer Bank Holiday,False,GB,2020-08-03
+Croatia,Dan pobjede i domovinske zahvalnosti,Dan pobjede i domovinske zahvalnosti,,HR,2020-08-05
+Colombia,Batalla de Boyacá [Battle of Boyacá],Batalla de Boyacá [Battle of Boyacá],,CO,2020-08-07
+Norway,Søndag,Søndag,,NO,2020-08-09
+South Africa,National Women's Day,National Women's Day,,ZA,2020-08-09
+Sweden,Söndag,Söndag,,SE,2020-08-09
+Japan,山の日,山の日,,JP,2020-08-10
+South Africa,National Women's Day (Observed),National Women's Day,,ZA,2020-08-10
+Austria,Mariä Himmelfahrt,Mariä Himmelfahrt,,AT,2020-08-15
+Belgium,O.L.V. Hemelvaart,O.L.V. Hemelvaart,,BE,2020-08-15
+Croatia,Velika Gospa,Velika Gospa,,HR,2020-08-15
+France,Assomption,Assomption,,FR,2020-08-15
+India,Independence Day,Independence Day,True,IN,2020-08-15
+Italy,Assunzione della Vergine,Assunzione della Vergine,,IT,2020-08-15
+Poland,Wniebowzięcie Najświętszej Marii Panny,Wniebowzięcie Najświętszej Marii Panny,,PL,2020-08-15
+Portugal,Assunção de Nossa Senhora,Assunção de Nossa Senhora,,PT,2020-08-15
+Slovenia,Marijino vnebovzetje,Marijino vnebovzetje,,SI,2020-08-15
+Spain,Asunción de la Virgen,Asunción de la Virgen,,ES,2020-08-15
+Norway,Søndag,Søndag,,NO,2020-08-16
+Sweden,Söndag,Söndag,,SE,2020-08-16
+Argentina,Día Pase a la Inmortalidad del General D. José de San Martin [Day Pass to the Immortality of General D. José de San Martin],Día Pase a la Inmortalidad del General D. José de San Martin [Day Pass to the Immortality of General D. José de San Martin],,AR,2020-08-17
+Colombia,La Asunción [Assumption of Mary](Observed),La Asunción [Assumption of Mary],,CO,2020-08-17
+Hungary,Az államalapítás ünnepe,Az államalapítás ünnepe,,HU,2020-08-20
+Hungary,Az államalapítás ünnepe utáni pihenőnap,Az államalapítás ünnepe utáni pihenőnap,,HU,2020-08-21
+Norway,Søndag,Søndag,,NO,2020-08-23
+Sweden,Söndag,Söndag,,SE,2020-08-23
+Ukraine,День незалежності України,День незалежності України,,UA,2020-08-24
+Norway,Søndag,Søndag,,NO,2020-08-30
+Sweden,Söndag,Söndag,,SE,2020-08-30
+England,Late Summer Bank Holiday,Late Summer Bank Holiday,,,2020-08-31
+Isle of Man,Late Summer Bank Holiday,Late Summer Bank Holiday,,IM,2020-08-31
+Northern Ireland,Late Summer Bank Holiday,Late Summer Bank Holiday,,,2020-08-31
+United Kingdom,"Late Summer Bank Holiday [England, Wales, Northern Ireland]",Late Summer Bank Holiday,True,GB,2020-08-31
+Wales,Late Summer Bank Holiday,Late Summer Bank Holiday,,,2020-08-31
+Norway,Søndag,Søndag,,NO,2020-09-06
+Sweden,Söndag,Söndag,,SE,2020-09-06
+Brazil,Independência do Brasil,Independência do Brasil,,BR,2020-09-07
+Canada,Labour Day,Labour Day,,CA,2020-09-07
+United States,Labor Day,Labor Day,True,US,2020-09-07
+Norway,Søndag,Søndag,,NO,2020-09-13
+Sweden,Söndag,Söndag,,SE,2020-09-13
+Mexico,Día de la Independencia [Independence Day],Día de la Independencia [Independence Day],,MX,2020-09-16
+Norway,Søndag,Søndag,,NO,2020-09-20
+Sweden,Söndag,Söndag,,SE,2020-09-20
+Japan,敬老の日,敬老の日,,JP,2020-09-21
+Japan,秋分の日,秋分の日,,JP,2020-09-22
+South Africa,Heritage Day,Heritage Day,,ZA,2020-09-24
+Norway,Søndag,Søndag,,NO,2020-09-27
+Sweden,Söndag,Söndag,,SE,2020-09-27
+Czech,Den české státnosti,Den české státnosti,,CZ,2020-09-28
+India,Gandhi Jayanti,Gandhi Jayanti,True,IN,2020-10-02
+Germany,Tag der Deutschen Einheit,Tag der Deutschen Einheit,,DE,2020-10-03
+Norway,Søndag,Søndag,,NO,2020-10-04
+Sweden,Söndag,Söndag,,SE,2020-10-04
+Portugal,Implantação da República,Implantação da República,,PT,2020-10-05
+Croatia,Dan neovisnosti,Dan neovisnosti,,HR,2020-10-08
+Norway,Søndag,Søndag,,NO,2020-10-11
+Sweden,Söndag,Söndag,,SE,2020-10-11
+Argentina,Día del Respeto a la Diversidad Cultural [Respect for Cultural Diversity Day],Día del Respeto a la Diversidad Cultural [Respect for Cultural Diversity Day],,AR,2020-10-12
+Brazil,Nossa Senhora Aparecida,Nossa Senhora Aparecida,,BR,2020-10-12
+Canada,Thanksgiving,Thanksgiving,,CA,2020-10-12
+Colombia,Descubrimiento de América [Discovery of America],Descubrimiento de América [Discovery of America],,CO,2020-10-12
+Spain,Día de la Hispanidad,Día de la Hispanidad,,ES,2020-10-12
+United States,Columbus Day,Columbus Day,False,US,2020-10-12
+Ukraine,День захисника України,День захисника України,,UA,2020-10-14
+Norway,Søndag,Søndag,,NO,2020-10-18
+Sweden,Söndag,Söndag,,SE,2020-10-18
+Hungary,Nemzeti ünnep,Nemzeti ünnep,,HU,2020-10-23
+Norway,Søndag,Søndag,,NO,2020-10-25
+Sweden,Söndag,Söndag,,SE,2020-10-25
+Austria,Nationalfeiertag,Nationalfeiertag,,AT,2020-10-26
+Ireland,October Bank Holiday,October Bank Holiday,,IE,2020-10-26
+New Zealand,Labour Day,Labour Day,,NZ,2020-10-26
+Czech,Den vzniku samostatného československého státu,Den vzniku samostatného československého státu,,CZ,2020-10-28
+Finland,Pyhäinpäivä,Pyhäinpäivä,,FI,2020-10-31
+Slovenia,dan reformacije,dan reformacije,,SI,2020-10-31
+Sweden,Alla helgons dag,Alla helgons dag,,SE,2020-10-31
+Austria,Allerheiligen,Allerheiligen,,AT,2020-11-01
+Belgium,Allerheiligen,Allerheiligen,,BE,2020-11-01
+Croatia,Svi sveti,Svi sveti,,HR,2020-11-01
+France,Toussaint,Toussaint,,FR,2020-11-01
+Hungary,Mindenszentek,Mindenszentek,,HU,2020-11-01
+Italy,Tutti i Santi,Tutti i Santi,,IT,2020-11-01
+Norway,Søndag,Søndag,,NO,2020-11-01
+Poland,Uroczystość Wszystkich świętych,Uroczystość Wszystkich świętych,,PL,2020-11-01
+Portugal,Dia de Todos os Santos,Dia de Todos os Santos,,PT,2020-11-01
+Slovenia,dan spomina na mrtve,dan spomina na mrtve,,SI,2020-11-01
+Spain,Todos los Santos,Todos los Santos,,ES,2020-11-01
+Sweden,Söndag,Söndag,,SE,2020-11-01
+Brazil,Finados,Finados,,BR,2020-11-02
+Colombia,Dia de Todos los Santos [All Saint's Day](Observed),Dia de Todos los Santos [All Saint's Day],,CO,2020-11-02
+Japan,文化の日,文化の日,,JP,2020-11-03
+Belarus,День Октябрьской революции,День Октябрьской революции,,BY,2020-11-07
+Norway,Søndag,Søndag,,NO,2020-11-08
+Sweden,Söndag,Söndag,,SE,2020-11-08
+Belgium,Wapenstilstand,Wapenstilstand,,BE,2020-11-11
+France,Armistice 1918,Armistice 1918,,FR,2020-11-11
+Poland,Narodowe Święto Niepodległości,Narodowe Święto Niepodległości,,PL,2020-11-11
+United States,Veterans Day,Veterans Day,False,US,2020-11-11
+Brazil,Proclamação da República,Proclamação da República,,BR,2020-11-15
+Norway,Søndag,Søndag,,NO,2020-11-15
+Sweden,Söndag,Söndag,,SE,2020-11-15
+Colombia,Independencia de Cartagena [Independence of Cartagena](Observed),Independencia de Cartagena [Independence of Cartagena],,CO,2020-11-16
+Mexico,Día de la Revolución [Revolution Day] (Observed),Día de la Revolución [Revolution Day],,MX,2020-11-16
+Czech,Den boje za svobodu a demokracii,Den boje za svobodu a demokracii,,CZ,2020-11-17
+Croatia,Dan sjećanja,Dan sjećanja,,HR,2020-11-18
+Argentina,Día Nacional de la Soberanía [National Sovereignty Day],Día Nacional de la Soberanía [National Sovereignty Day],,AR,2020-11-20
+Mexico,Día de la Revolución [Revolution Day],Día de la Revolución [Revolution Day],,MX,2020-11-20
+Norway,Søndag,Søndag,,NO,2020-11-22
+Sweden,Söndag,Söndag,,SE,2020-11-22
+Japan,勤労感謝の日,勤労感謝の日,,JP,2020-11-23
+United States,Thanksgiving,Thanksgiving,True,US,2020-11-26
+Norway,Søndag,Søndag,,NO,2020-11-29
+Sweden,Söndag,Söndag,,SE,2020-11-29
+Scotland,St. Andrew's Day,St. Andrew's Day,,,2020-11-30
+United Kingdom,St. Andrew's Day [Scotland],St. Andrew's Day,False,GB,2020-11-30
+Portugal,Restauração da Independência,Restauração da Independência,,PT,2020-12-01
+Finland,Itsenäisyyspäivä,Itsenäisyyspäivä,,FI,2020-12-06
+Norway,Søndag,Søndag,,NO,2020-12-06
+Spain,Día de la constitución Española,Día de la constitución Española,,ES,2020-12-06
+Sweden,Söndag,Söndag,,SE,2020-12-06
+Argentina,La Inmaculada Concepción [Immaculate Conception],La Inmaculada Concepción [Immaculate Conception],,AR,2020-12-08
+Austria,Mariä Empfängnis,Mariä Empfängnis,,AT,2020-12-08
+Colombia,La Inmaculada Concepción [Immaculate Conception],La Inmaculada Concepción [Immaculate Conception],,CO,2020-12-08
+Italy,Immacolata Concezione,Immacolata Concezione,,IT,2020-12-08
+Portugal,Imaculada Conceição,Imaculada Conceição,,PT,2020-12-08
+Spain,La Inmaculada Concepción,La Inmaculada Concepción,,ES,2020-12-08
+Norway,Søndag,Søndag,,NO,2020-12-13
+Sweden,Söndag,Söndag,,SE,2020-12-13
+South Africa,Day of Reconciliation,Day of Reconciliation,,ZA,2020-12-16
+Norway,Søndag,Søndag,,NO,2020-12-20
+Sweden,Söndag,Söndag,,SE,2020-12-20
+Czech,Štědrý den,Štědrý den,,CZ,2020-12-24
+Finland,Jouluaatto,Jouluaatto,,FI,2020-12-24
+Hungary,Szenteste,Szenteste,,HU,2020-12-24
+Sweden,Julafton,Julafton,,SE,2020-12-24
+Argentina,Navidad [Christmas],Navidad [Christmas],,AR,2020-12-25
+Australia,Christmas Day,Christmas Day,,AU,2020-12-25
+Austria,Christtag,Christtag,,AT,2020-12-25
+Belarus,Рождество Христово (католическое Рождество),Рождество Христово (католическое Рождество),,BY,2020-12-25
+Belgium,Kerstmis,Kerstmis,,BE,2020-12-25
+Brazil,Natal,Natal,,BR,2020-12-25
+Canada,Christmas Day,Christmas Day,,CA,2020-12-25
+Colombia,Navidad [Christmas],Navidad [Christmas],,CO,2020-12-25
+Croatia,Božić,Božić,,HR,2020-12-25
+Czech,1. svátek vánoční,1. svátek vánoční,,CZ,2020-12-25
+Denmark,Juledag,Juledag,,DK,2020-12-25
+England,Christmas Day,Christmas Day,,,2020-12-25
+Finland,Joulupäivä,Joulupäivä,,FI,2020-12-25
+France,Noël,Noël,,FR,2020-12-25
+Germany,Erster Weihnachtstag,Erster Weihnachtstag,,DE,2020-12-25
+Hungary,Karácsony,Karácsony,,HU,2020-12-25
+India,Christmas,Christmas,False,IN,2020-12-25
+Ireland,Christmas Day,Christmas Day,,IE,2020-12-25
+Isle of Man,Christmas Day,Christmas Day,,IM,2020-12-25
+Italy,Natale,Natale,,IT,2020-12-25
+Mexico,Navidad [Christmas],Navidad [Christmas],,MX,2020-12-25
+Netherlands,Eerste Kerstdag,Eerste Kerstdag,,NL,2020-12-25
+New Zealand,Christmas Day,Christmas Day,,NZ,2020-12-25
+Northern Ireland,Christmas Day,Christmas Day,,,2020-12-25
+Norway,Første juledag,Første juledag,,NO,2020-12-25
+Poland,Boże Narodzenie (pierwszy dzień),Boże Narodzenie (pierwszy dzień),,PL,2020-12-25
+Portugal,Dia de Natal,Dia de Natal,,PT,2020-12-25
+Scotland,Christmas Day,Christmas Day,,,2020-12-25
+Slovenia,Božič,Božič,,SI,2020-12-25
+South Africa,Christmas Day,Christmas Day,,ZA,2020-12-25
+Spain,Navidad,Navidad,,ES,2020-12-25
+Sweden,Juldagen,Juldagen,,SE,2020-12-25
+Switzerland,Weihnachten,Weihnachten,,CH,2020-12-25
+Ukraine,Різдво Христове (католицьке),Різдво Христове (католицьке),,UA,2020-12-25
+United Kingdom,Christmas Day,Christmas Day,True,GB,2020-12-25
+United States,Christmas Day,Christmas Day,True,US,2020-12-25
+Wales,Christmas Day,Christmas Day,,,2020-12-25
+Australia,Boxing Day,Boxing Day,,AU,2020-12-26
+Austria,Stefanitag,Stefanitag,,AT,2020-12-26
+Croatia,Sveti Stjepan,Sveti Stjepan,,HR,2020-12-26
+Czech,2. svátek vánoční,2. svátek vánoční,,CZ,2020-12-26
+Denmark,Anden juledag,Anden juledag,,DK,2020-12-26
+England,Boxing Day,Boxing Day,,,2020-12-26
+Finland,Tapaninpäivä,Tapaninpäivä,,FI,2020-12-26
+Germany,Zweiter Weihnachtstag,Zweiter Weihnachtstag,,DE,2020-12-26
+Hungary,Karácsony másnapja,Karácsony másnapja,,HU,2020-12-26
+Ireland,Boxing Day,Boxing Day,,IE,2020-12-26
+Isle of Man,Boxing Day,Boxing Day,,IM,2020-12-26
+Italy,Santo Stefano,Santo Stefano,,IT,2020-12-26
+Netherlands,Tweede Kerstdag,Tweede Kerstdag,,NL,2020-12-26
+New Zealand,Boxing Day,Boxing Day,,NZ,2020-12-26
+Northern Ireland,Boxing Day,Boxing Day,,,2020-12-26
+Norway,Andre juledag,Andre juledag,,NO,2020-12-26
+Poland,Boże Narodzenie (drugi dzień),Boże Narodzenie (drugi dzień),,PL,2020-12-26
+Scotland,Boxing Day,Boxing Day,,,2020-12-26
+Slovenia,dan samostojnosti in enotnosti,dan samostojnosti in enotnosti,,SI,2020-12-26
+South Africa,Day of Goodwill,Day of Goodwill,,ZA,2020-12-26
+Sweden,Annandag jul,Annandag jul,,SE,2020-12-26
+United Kingdom,Boxing Day,Boxing Day,True,GB,2020-12-26
+Wales,Boxing Day,Boxing Day,,,2020-12-26
+Norway,Søndag,Søndag,,NO,2020-12-27
+Sweden,Söndag,Söndag,,SE,2020-12-27
+Australia,Boxing Day (Observed),Boxing Day,,AU,2020-12-28
+Canada,Boxing Day (Observed),Boxing Day,,CA,2020-12-28
+England,Boxing Day (Observed),Boxing Day,,,2020-12-28
+Ireland,Boxing Day (Observed),Boxing Day,,IE,2020-12-28
+Isle of Man,Boxing Day (Observed),Boxing Day,,IM,2020-12-28
+New Zealand,Boxing Day (Observed),Boxing Day,,NZ,2020-12-28
+Northern Ireland,Boxing Day (Observed),Boxing Day,,,2020-12-28
+Scotland,Boxing Day (Observed),Boxing Day,,,2020-12-28
+United Kingdom,Boxing Day (Observed),Boxing Day,True,GB,2020-12-28
+Wales,Boxing Day (Observed),Boxing Day,,,2020-12-28
+Sweden,Nyårsafton,Nyårsafton,,SE,2020-12-31
+Argentina,Año Nuevo [New Year's Day],Año Nuevo [New Year's Day],,AR,2021-01-01
+Australia,New Year's Day,New Year's Day,,AU,2021-01-01
+Austria,Neujahr,Neujahr,,AT,2021-01-01
+Belarus,Новый год,Новый год,,BY,2021-01-01
+Belgium,Nieuwjaarsdag,Nieuwjaarsdag,,BE,2021-01-01
+Brazil,Ano novo,Ano novo,,BR,2021-01-01
+Canada,New Year's Day,New Year's Day,,CA,2021-01-01
+Colombia,Año Nuevo [New Year's Day],Año Nuevo [New Year's Day],,CO,2021-01-01
+Croatia,Nova Godina,Nova Godina,,HR,2021-01-01
+Czech,Den obnovy samostatného českého státu,Den obnovy samostatného českého státu,,CZ,2021-01-01
+Denmark,Nytårsdag,Nytårsdag,,DK,2021-01-01
+England,New Year's Day,New Year's Day,,,2021-01-01
+Finland,Uudenvuodenpäivä,Uudenvuodenpäivä,,FI,2021-01-01
+France,Jour de l'an,Jour de l'an,,FR,2021-01-01
+Germany,Neujahr,Neujahr,,DE,2021-01-01
+Hungary,Újév,Újév,,HU,2021-01-01
+Ireland,New Year's Day,New Year's Day,,IE,2021-01-01
+Isle of Man,New Year's Day,New Year's Day,,IM,2021-01-01
+Italy,Capodanno,Capodanno,,IT,2021-01-01
+Japan,元日,元日,,JP,2021-01-01
+Mexico,Año Nuevo [New Year's Day],Año Nuevo [New Year's Day],,MX,2021-01-01
+Netherlands,Nieuwjaarsdag,Nieuwjaarsdag,,NL,2021-01-01
+New Zealand,New Year's Day,New Year's Day,,NZ,2021-01-01
+Northern Ireland,New Year's Day,New Year's Day,,,2021-01-01
+Norway,Første nyttårsdag,Første nyttårsdag,,NO,2021-01-01
+Poland,Nowy Rok,Nowy Rok,,PL,2021-01-01
+Portugal,Ano Novo,Ano Novo,,PT,2021-01-01
+Scotland,New Year's Day,New Year's Day,,,2021-01-01
+Slovenia,novo leto,novo leto,,SI,2021-01-01
+South Africa,New Year's Day,New Year's Day,,ZA,2021-01-01
+Spain,Año nuevo,Año nuevo,,ES,2021-01-01
+Sweden,Nyårsdagen,Nyårsdagen,,SE,2021-01-01
+Switzerland,Neujahrestag,Neujahrestag,,CH,2021-01-01
+Ukraine,Новий рік,Новий рік,,UA,2021-01-01
+United Kingdom,New Year's Day,New Year's Day,True,GB,2021-01-01
+United States,New Year's Day,New Year's Day,True,US,2021-01-01
+Wales,New Year's Day,New Year's Day,,,2021-01-01
+Belarus,Новый год,Новый год,,BY,2021-01-02
+New Zealand,Day after New Year's Day,Day after New Year's Day,,NZ,2021-01-02
+Scotland,New Year Holiday,New Year Holiday,,,2021-01-02
+Slovenia,novo leto,novo leto,,SI,2021-01-02
+United Kingdom,New Year Holiday [Scotland],New Year Holiday,True,GB,2021-01-02
+Norway,Søndag,Søndag,,NO,2021-01-03
+Sweden,Söndag,Söndag,,SE,2021-01-03
+New Zealand,Day after New Year's Day (Observed),Day after New Year's Day,,NZ,2021-01-04
+Scotland,New Year Holiday (Observed),New Year Holiday,,,2021-01-04
+United Kingdom,New Year Holiday [Scotland] (Observed),New Year Holiday,True,GB,2021-01-04
+Austria,Heilige Drei Könige,Heilige Drei Könige,,AT,2021-01-06
+Croatia,Sveta tri kralja,Sveta tri kralja,,HR,2021-01-06
+Finland,Loppiainen,Loppiainen,,FI,2021-01-06
+Italy,Epifania del Signore,Epifania del Signore,,IT,2021-01-06
+Poland,Święto Trzech Króli,Święto Trzech Króli,,PL,2021-01-06
+Spain,Epifanía del Señor,Epifanía del Señor,,ES,2021-01-06
+Sweden,Trettondedag jul,Trettondedag jul,,SE,2021-01-06
+Belarus,Рождество Христово (православное Рождество),Рождество Христово (православное Рождество),,BY,2021-01-07
+Ukraine,Різдво Христове (православне),Різдво Христове (православне),,UA,2021-01-07
+Norway,Søndag,Søndag,,NO,2021-01-10
+Sweden,Söndag,Söndag,,SE,2021-01-10
+Colombia,Día de los Reyes Magos [Epiphany](Observed),Día de los Reyes Magos [Epiphany],,CO,2021-01-11
+Japan,成人の日,成人の日,,JP,2021-01-11
+India,Makar Sankranti / Pongal,Makar Sankranti / Pongal,False,IN,2021-01-14
+Norway,Søndag,Søndag,,NO,2021-01-17
+Sweden,Söndag,Söndag,,SE,2021-01-17
+United States,Martin Luther King Jr. Day,Martin Luther King Jr. Day,,US,2021-01-18
+Norway,Søndag,Søndag,,NO,2021-01-24
+Sweden,Söndag,Söndag,,SE,2021-01-24
+Australia,Australia Day,Australia Day,,AU,2021-01-26
+India,Republic Day,Republic Day,True,IN,2021-01-26
+Norway,Søndag,Søndag,,NO,2021-01-31
+Sweden,Söndag,Söndag,,SE,2021-01-31
+Mexico,Día de la Constitución [Constitution Day] (Observed),Día de la Constitución [Constitution Day],,MX,2021-02-01
+Mexico,Día de la Constitución [Constitution Day],Día de la Constitución [Constitution Day],,MX,2021-02-05
+New Zealand,Waitangi Day,Waitangi Day,,NZ,2021-02-06
+Norway,Søndag,Søndag,,NO,2021-02-07
+Sweden,Söndag,Söndag,,SE,2021-02-07
+New Zealand,Waitangi Day (Observed),Waitangi Day,,NZ,2021-02-08
+Slovenia,Prešernov dan,Prešernov dan,,SI,2021-02-08
+Japan,建国記念の日,建国記念の日,,JP,2021-02-11
+Norway,Søndag,Søndag,,NO,2021-02-14
+Sweden,Söndag,Söndag,,SE,2021-02-14
+Argentina,Día de Carnaval [Carnival's Day],Día de Carnaval [Carnival's Day],,AR,2021-02-15
+Canada,Family Day,Family Day,,CA,2021-02-15
+United States,Washington's Birthday,Washington's Birthday,True,US,2021-02-15
+Argentina,Día de Carnaval [Carnival's Day],Día de Carnaval [Carnival's Day],,AR,2021-02-16
+Brazil,Carnaval,Carnaval,,BR,2021-02-16
+Brazil,Quarta-feira de cinzas (Início da Quaresma),Quarta-feira de cinzas (Início da Quaresma),,BR,2021-02-17
+Norway,Søndag,Søndag,,NO,2021-02-21
+Sweden,Söndag,Söndag,,SE,2021-02-21
+Japan,天皇誕生日,天皇誕生日,,JP,2021-02-23
+Norway,Søndag,Søndag,,NO,2021-02-28
+Sweden,Söndag,Söndag,,SE,2021-02-28
+Norway,Søndag,Søndag,,NO,2021-03-07
+Sweden,Söndag,Söndag,,SE,2021-03-07
+Belarus,День женщин,День женщин,,BY,2021-03-08
+Ukraine,Міжнародний жіночий день,Міжнародний жіночий день,,UA,2021-03-08
+Norway,Søndag,Søndag,,NO,2021-03-14
+Sweden,Söndag,Söndag,,SE,2021-03-14
+Hungary,Nemzeti ünnep,Nemzeti ünnep,,HU,2021-03-15
+Mexico,Natalicio de Benito Juárez [Benito Juárez's birthday] (Observed),Natalicio de Benito Juárez [Benito Juárez's birthday],,MX,2021-03-15
+Ireland,St. Patrick's Day,St. Patrick's Day,,IE,2021-03-17
+Northern Ireland,St. Patrick's Day,St. Patrick's Day,,,2021-03-17
+United Kingdom,St. Patrick's Day [Northern Ireland],St. Patrick's Day,False,GB,2021-03-17
+Japan,春分の日,春分の日,,JP,2021-03-20
+Mexico,Natalicio de Benito Juárez [Benito Juárez's birthday],Natalicio de Benito Juárez [Benito Juárez's birthday],,MX,2021-03-21
+Norway,Søndag,Søndag,,NO,2021-03-21
+South Africa,Human Rights Day,Human Rights Day,,ZA,2021-03-21
+Sweden,Söndag,Söndag,,SE,2021-03-21
+Colombia,Día de San José [Saint Joseph's Day](Observed),Día de San José [Saint Joseph's Day],,CO,2021-03-22
+South Africa,Human Rights Day (Observed),Human Rights Day,,ZA,2021-03-22
+Argentina,Día Nacional de la Memoria por la Verdad y la Justicia [Memory's National Day for the Truth and Justice],Día Nacional de la Memoria por la Verdad y la Justicia [Memory's National Day for the Truth and Justice],,AR,2021-03-24
+Denmark,Palmesøndag,Palmesøndag,,DK,2021-03-28
+Norway,Søndag,Søndag,,NO,2021-03-28
+Sweden,Söndag,Söndag,,SE,2021-03-28
+Argentina,Semana Santa (Jueves Santo)  [Holy day (Holy Thursday)],Semana Santa (Jueves Santo)  [Holy day (Holy Thursday)],,AR,2021-04-01
+Colombia,Jueves Santo [Maundy Thursday],Jueves Santo [Maundy Thursday],,CO,2021-04-01
+Denmark,Skærtorsdag,Skærtorsdag,,DK,2021-04-01
+Norway,Skjærtorsdag,Skjærtorsdag,,NO,2021-04-01
+Argentina,"Día del Veterano y de los Caidos en la Guerra de Malvinas [Veterans Day and the Fallen in the Malvinas War], Semana Santa (Viernes Santo)  [Holy day (Holy Friday)]","Día del Veterano y de los Caidos en la Guerra de Malvinas [Veterans Day and the Fallen in the Malvinas War], Semana Santa (Viernes Santo)  [Holy day (Holy Friday)]",,AR,2021-04-02
+Australia,Good Friday,Good Friday,,AU,2021-04-02
+Brazil,Sexta-feira Santa,Sexta-feira Santa,,BR,2021-04-02
+Canada,Good Friday,Good Friday,,CA,2021-04-02
+Colombia,Viernes Santo [Good Friday],Viernes Santo [Good Friday],,CO,2021-04-02
+Czech,Velký pátek,Velký pátek,,CZ,2021-04-02
+Denmark,Langfredag,Langfredag,,DK,2021-04-02
+England,Good Friday,Good Friday,,,2021-04-02
+Finland,Pitkäperjantai,Pitkäperjantai,,FI,2021-04-02
+Germany,Karfreitag,Karfreitag,,DE,2021-04-02
+Hungary,Nagypéntek,Nagypéntek,,HU,2021-04-02
+Isle of Man,Good Friday,Good Friday,,IM,2021-04-02
+Netherlands,Goede Vrijdag,Goede Vrijdag,,NL,2021-04-02
+New Zealand,Good Friday,Good Friday,,NZ,2021-04-02
+Northern Ireland,Good Friday,Good Friday,,,2021-04-02
+Norway,Langfredag,Langfredag,,NO,2021-04-02
+Portugal,Sexta-feira Santa,Sexta-feira Santa,,PT,2021-04-02
+Scotland,Good Friday,Good Friday,,,2021-04-02
+South Africa,Good Friday,Good Friday,,ZA,2021-04-02
+Sweden,Långfredagen,Långfredagen,,SE,2021-04-02
+Switzerland,Karfreitag,Karfreitag,,CH,2021-04-02
+United Kingdom,Good Friday,Good Friday,True,GB,2021-04-02
+Wales,Good Friday,Good Friday,,,2021-04-02
+Argentina,Día de Pascuas [Easter Day],Día de Pascuas [Easter Day],,AR,2021-04-04
+Belgium,Pasen,Pasen,,BE,2021-04-04
+Brazil,Páscoa,Páscoa,,BR,2021-04-04
+Croatia,Uskrs,Uskrs,,HR,2021-04-04
+Denmark,Påskedag,Påskedag,,DK,2021-04-04
+Finland,Pääsiäispäivä,Pääsiäispäivä,,FI,2021-04-04
+Hungary,Húsvét,Húsvét,,HU,2021-04-04
+Italy,Pasqua di Resurrezione,Pasqua di Resurrezione,,IT,2021-04-04
+Netherlands,Eerste paasdag,Eerste paasdag,,NL,2021-04-04
+Norway,"Første påskedag, Søndag","Første påskedag, Søndag",,NO,2021-04-04
+Poland,Niedziela Wielkanocna,Niedziela Wielkanocna,,PL,2021-04-04
+Portugal,Páscoa,Páscoa,,PT,2021-04-04
+Sweden,"Påskdagen, Söndag","Påskdagen, Söndag",,SE,2021-04-04
+Switzerland,Ostern,Ostern,,CH,2021-04-04
+Australia,Easter Monday,Easter Monday,,AU,2021-04-05
+Austria,Ostermontag,Ostermontag,,AT,2021-04-05
+Belgium,Paasmaandag,Paasmaandag,,BE,2021-04-05
+Croatia,Uskrsni ponedjeljak,Uskrsni ponedjeljak,,HR,2021-04-05
+Czech,Velikonoční pondělí,Velikonoční pondělí,,CZ,2021-04-05
+Denmark,Anden påskedag,Anden påskedag,,DK,2021-04-05
+England,Easter Monday,Easter Monday,,,2021-04-05
+Finland,2. pääsiäispäivä,2. pääsiäispäivä,,FI,2021-04-05
+France,Lundi de Pâques,Lundi de Pâques,,FR,2021-04-05
+Germany,Ostermontag,Ostermontag,,DE,2021-04-05
+Hungary,Húsvét Hétfő,Húsvét Hétfő,,HU,2021-04-05
+Ireland,Easter Monday,Easter Monday,,IE,2021-04-05
+Isle of Man,Easter Monday,Easter Monday,,IM,2021-04-05
+Italy,Lunedì dell'Angelo,Lunedì dell'Angelo,,IT,2021-04-05
+Netherlands,Tweede paasdag,Tweede paasdag,,NL,2021-04-05
+New Zealand,Easter Monday,Easter Monday,,NZ,2021-04-05
+Northern Ireland,Easter Monday,Easter Monday,,,2021-04-05
+Norway,Andre påskedag,Andre påskedag,,NO,2021-04-05
+Poland,Poniedziałek Wielkanocny,Poniedziałek Wielkanocny,,PL,2021-04-05
+Slovenia,Velikonočni ponedeljek,Velikonočni ponedeljek,,SI,2021-04-05
+South Africa,Family Day,Family Day,,ZA,2021-04-05
+Sweden,Annandag påsk,Annandag påsk,,SE,2021-04-05
+Switzerland,Ostermontag,Ostermontag,,CH,2021-04-05
+United Kingdom,"Easter Monday [England, Wales, Northern Ireland]",Easter Monday,True,GB,2021-04-05
+Wales,Easter Monday,Easter Monday,,,2021-04-05
+Norway,Søndag,Søndag,,NO,2021-04-11
+Sweden,Söndag,Söndag,,SE,2021-04-11
+Norway,Søndag,Søndag,,NO,2021-04-18
+Sweden,Söndag,Söndag,,SE,2021-04-18
+Brazil,Tiradentes,Tiradentes,,BR,2021-04-21
+Australia,Anzac Day,Anzac Day,,AU,2021-04-25
+Italy,Festa della Liberazione,Festa della Liberazione,,IT,2021-04-25
+New Zealand,Anzac Day,Anzac Day,,NZ,2021-04-25
+Norway,Søndag,Søndag,,NO,2021-04-25
+Portugal,Dia da Liberdade,Dia da Liberdade,,PT,2021-04-25
+Sweden,Söndag,Söndag,,SE,2021-04-25
+New Zealand,Anzac Day (Observed),Anzac Day,,NZ,2021-04-26
+Netherlands,Koningsdag,Koningsdag,,NL,2021-04-27
+Slovenia,dan upora proti okupatorju,dan upora proti okupatorju,,SI,2021-04-27
+South Africa,Freedom Day,Freedom Day,,ZA,2021-04-27
+Japan,昭和の日,昭和の日,,JP,2021-04-29
+Denmark,Store bededag,Store bededag,,DK,2021-04-30
+Mexico,Natalicio de Benito Juárez [Benito Juárez's birthday] (Observed),Natalicio de Benito Juárez [Benito Juárez's birthday],,MX,2021-04-30
+Argentina,Día del Trabajo [Labour Day],Día del Trabajo [Labour Day],,AR,2021-05-01
+Austria,Staatsfeiertag,Staatsfeiertag,,AT,2021-05-01
+Belarus,Праздник труда,Праздник труда,,BY,2021-05-01
+Belgium,Dag van de Arbeid,Dag van de Arbeid,,BE,2021-05-01
+Brazil,Dia Mundial do Trabalho,Dia Mundial do Trabalho,,BR,2021-05-01
+Colombia,Día del Trabajo [Labour Day],Día del Trabajo [Labour Day],,CO,2021-05-01
+Croatia,Međunarodni praznik rada,Međunarodni praznik rada,,HR,2021-05-01
+Czech,Svátek práce,Svátek práce,,CZ,2021-05-01
+Finland,Vappu,Vappu,,FI,2021-05-01
+France,Fête du Travail,Fête du Travail,,FR,2021-05-01
+Germany,Erster Mai,Erster Mai,,DE,2021-05-01
+Hungary,A Munka ünnepe,A Munka ünnepe,,HU,2021-05-01
+India,Labour Day,Labour Day,False,IN,2021-05-01
+Italy,Festa dei Lavoratori,Festa dei Lavoratori,,IT,2021-05-01
+Mexico,Día del Trabajo [Labour Day],Día del Trabajo [Labour Day],,MX,2021-05-01
+Norway,Arbeidernes dag,Arbeidernes dag,,NO,2021-05-01
+Poland,Święto Państwowe,Święto Państwowe,,PL,2021-05-01
+Portugal,Dia do Trabalhador,Dia do Trabalhador,,PT,2021-05-01
+Slovenia,praznik dela,praznik dela,,SI,2021-05-01
+South Africa,Workers' Day,Workers' Day,,ZA,2021-05-01
+Spain,Día del Trabajador,Día del Trabajador,,ES,2021-05-01
+Sweden,Första maj,Första maj,,SE,2021-05-01
+Ukraine,День праці,День праці,,UA,2021-05-01
+Norway,Søndag,Søndag,,NO,2021-05-02
+Slovenia,praznik dela,praznik dela,,SI,2021-05-02
+Sweden,Söndag,Söndag,,SE,2021-05-02
+Ukraine,Пасха (Великдень),Пасха (Великдень),,UA,2021-05-02
+England,May Day,May Day,,,2021-05-03
+Ireland,May Day,May Day,,IE,2021-05-03
+Isle of Man,May Day,May Day,,IM,2021-05-03
+Japan,憲法記念日,憲法記念日,,JP,2021-05-03
+Northern Ireland,May Day,May Day,,,2021-05-03
+Poland,Święto Narodowe Trzeciego Maja,Święto Narodowe Trzeciego Maja,,PL,2021-05-03
+Scotland,May Day,May Day,,,2021-05-03
+United Kingdom,May Day,May Day,True,GB,2021-05-03
+Wales,May Day,May Day,,,2021-05-03
+Japan,みどりの日,みどりの日,,JP,2021-05-04
+Japan,こどもの日,こどもの日,,JP,2021-05-05
+Czech,Den vítězství,Den vítězství,,CZ,2021-05-08
+France,Armistice 1945,Armistice 1945,,FR,2021-05-08
+Belarus,День Победы,День Победы,,BY,2021-05-09
+Norway,Søndag,Søndag,,NO,2021-05-09
+Sweden,Söndag,Söndag,,SE,2021-05-09
+Ukraine,День перемоги,День перемоги,,UA,2021-05-09
+Belarus,Радуница,Радуница,,BY,2021-05-11
+Austria,Christi Himmelfahrt,Christi Himmelfahrt,,AT,2021-05-13
+Belgium,O.L.H. Hemelvaart,O.L.H. Hemelvaart,,BE,2021-05-13
+Denmark,Kristi himmelfartsdag,Kristi himmelfartsdag,,DK,2021-05-13
+Finland,Helatorstai,Helatorstai,,FI,2021-05-13
+France,Ascension,Ascension,,FR,2021-05-13
+Germany,Christi Himmelfahrt,Christi Himmelfahrt,,DE,2021-05-13
+Netherlands,Hemelvaart,Hemelvaart,,NL,2021-05-13
+Norway,Kristi himmelfartsdag,Kristi himmelfartsdag,,NO,2021-05-13
+Sweden,Kristi himmelsfärdsdag,Kristi himmelsfärdsdag,,SE,2021-05-13
+Switzerland,Auffahrt,Auffahrt,,CH,2021-05-13
+Norway,Søndag,Søndag,,NO,2021-05-16
+Sweden,Söndag,Söndag,,SE,2021-05-16
+Colombia,Ascensión del señor [Ascension of Jesus](Observed),Ascensión del señor [Ascension of Jesus],,CO,2021-05-17
+Norway,Grunnlovsdag,Grunnlovsdag,,NO,2021-05-17
+Belgium,Pinksteren,Pinksteren,,BE,2021-05-23
+Denmark,Pinsedag,Pinsedag,,DK,2021-05-23
+Finland,Helluntaipäivä,Helluntaipäivä,,FI,2021-05-23
+Hungary,Pünkösd,Pünkösd,,HU,2021-05-23
+Netherlands,Eerste Pinksterdag,Eerste Pinksterdag,,NL,2021-05-23
+Norway,"Første pinsedag, Søndag","Første pinsedag, Søndag",,NO,2021-05-23
+Poland,Zielone Świątki,Zielone Świątki,,PL,2021-05-23
+Sweden,"Pingstdagen, Söndag","Pingstdagen, Söndag",,SE,2021-05-23
+Switzerland,Pfingsten,Pfingsten,,CH,2021-05-23
+Austria,Pfingstmontag,Pfingstmontag,,AT,2021-05-24
+Belgium,Pinkstermaandag,Pinkstermaandag,,BE,2021-05-24
+Canada,Victoria Day,Victoria Day,,CA,2021-05-24
+Denmark,Anden pinsedag,Anden pinsedag,,DK,2021-05-24
+France,Lundi de Pentecôte,Lundi de Pentecôte,,FR,2021-05-24
+Germany,Pfingstmontag,Pfingstmontag,,DE,2021-05-24
+Hungary,Pünkösdhétfő,Pünkösdhétfő,,HU,2021-05-24
+Netherlands,Tweede Pinksterdag,Tweede Pinksterdag,,NL,2021-05-24
+Norway,Andre pinsedag,Andre pinsedag,,NO,2021-05-24
+Switzerland,Pfingstmontag,Pfingstmontag,,CH,2021-05-24
+Argentina,Día de la Revolucion de Mayo [May Revolution Day],Día de la Revolucion de Mayo [May Revolution Day],,AR,2021-05-25
+Norway,Søndag,Søndag,,NO,2021-05-30
+Sweden,Söndag,Söndag,,SE,2021-05-30
+England,Spring Bank Holiday,Spring Bank Holiday,,,2021-05-31
+Isle of Man,Spring Bank Holiday,Spring Bank Holiday,,IM,2021-05-31
+Northern Ireland,Spring Bank Holiday,Spring Bank Holiday,,,2021-05-31
+Scotland,Spring Bank Holiday,Spring Bank Holiday,,,2021-05-31
+United Kingdom,Spring Bank Holiday,Spring Bank Holiday,True,GB,2021-05-31
+United States,Memorial Day,Memorial Day,True,US,2021-05-31
+Wales,Spring Bank Holiday,Spring Bank Holiday,,,2021-05-31
+Italy,Festa della Repubblica,Festa della Repubblica,,IT,2021-06-02
+Austria,Fronleichnam,Fronleichnam,,AT,2021-06-03
+Brazil,Corpus Christi,Corpus Christi,,BR,2021-06-03
+Croatia,Tijelovo,Tijelovo,,HR,2021-06-03
+Poland,Dzień Bożego Ciała,Dzień Bożego Ciała,,PL,2021-06-03
+Portugal,Corpo de Deus,Corpo de Deus,,PT,2021-06-03
+Isle of Man,TT Bank Holiday,TT Bank Holiday,,IM,2021-06-04
+Norway,Søndag,Søndag,,NO,2021-06-06
+Sweden,"Sveriges nationaldag, Söndag","Sveriges nationaldag, Söndag",,SE,2021-06-06
+Colombia,Corpus Christi [Corpus Christi](Observed),Corpus Christi [Corpus Christi],,CO,2021-06-07
+Ireland,June Bank Holiday,June Bank Holiday,,IE,2021-06-07
+New Zealand,Queen's Birthday,Queen's Birthday,,NZ,2021-06-07
+Portugal,Dia de Portugal,Dia de Portugal,,PT,2021-06-10
+Norway,Søndag,Søndag,,NO,2021-06-13
+Sweden,Söndag,Söndag,,SE,2021-06-13
+Colombia,Sagrado Corazón [Sacred Heart](Observed),Sagrado Corazón [Sacred Heart],,CO,2021-06-14
+South Africa,Youth Day,Youth Day,,ZA,2021-06-16
+Argentina,Día Pase a la Inmortalidad del General Martín Miguel de Güemes [Day Pass to the Immortality of General Martín Miguel de Güemes],Día Pase a la Inmortalidad del General Martín Miguel de Güemes [Day Pass to the Immortality of General Martín Miguel de Güemes],,AR,2021-06-17
+Argentina,Día Pase a la Inmortalidad del General D. Manuel Belgrano [Day Pass to the Immortality of General D. Manuel Belgrano],Día Pase a la Inmortalidad del General D. Manuel Belgrano [Day Pass to the Immortality of General D. Manuel Belgrano],,AR,2021-06-20
+Norway,Søndag,Søndag,,NO,2021-06-20
+Sweden,Söndag,Söndag,,SE,2021-06-20
+Ukraine,Трійця,Трійця,,UA,2021-06-20
+Croatia,Dan antifašističke borbe,Dan antifašističke borbe,,HR,2021-06-22
+Finland,Juhannusaatto,Juhannusaatto,,FI,2021-06-25
+Slovenia,dan državnosti,dan državnosti,,SI,2021-06-25
+Sweden,Midsommarafton,Midsommarafton,,SE,2021-06-25
+Finland,Juhannuspäivä,Juhannuspäivä,,FI,2021-06-26
+Sweden,Midsommardagen,Midsommardagen,,SE,2021-06-26
+Norway,Søndag,Søndag,,NO,2021-06-27
+Sweden,Söndag,Söndag,,SE,2021-06-27
+Ukraine,День Конституції України,День Конституції України,,UA,2021-06-28
+Canada,Canada Day,Canada Day,,CA,2021-07-01
+Belarus,День Независимости Республики Беларусь (День Республики),День Независимости Республики Беларусь (День Республики),,BY,2021-07-03
+Norway,Søndag,Søndag,,NO,2021-07-04
+Sweden,Söndag,Söndag,,SE,2021-07-04
+United States,Independence Day,Independence Day,True,US,2021-07-04
+Colombia,San Pedro y San Pablo [Saint Peter and Saint Paul](Observed),San Pedro y San Pablo [Saint Peter and Saint Paul],,CO,2021-07-05
+Czech,Den slovanských věrozvěstů Cyrila a Metoděje,Den slovanských věrozvěstů Cyrila a Metoděje,,CZ,2021-07-05
+Isle of Man,Tynwald Day,Tynwald Day,,IM,2021-07-05
+United States,Independence Day (Observed),Independence Day,True,US,2021-07-05
+Czech,Den upálení mistra Jana Husa,Den upálení mistra Jana Husa,,CZ,2021-07-06
+Argentina,Día de la Independencia [Independence Day],Día de la Independencia [Independence Day],,AR,2021-07-09
+Norway,Søndag,Søndag,,NO,2021-07-11
+Sweden,Söndag,Söndag,,SE,2021-07-11
+Northern Ireland,Battle of the Boyne,Battle of the Boyne,,,2021-07-12
+United Kingdom,Battle of the Boyne [Northern Ireland],Battle of the Boyne,False,GB,2021-07-12
+France,Fête nationale,Fête nationale,,FR,2021-07-14
+Norway,Søndag,Søndag,,NO,2021-07-18
+Sweden,Söndag,Söndag,,SE,2021-07-18
+Japan,海の日,海の日,,JP,2021-07-19
+Colombia,Día de la Independencia [Independence Day],Día de la Independencia [Independence Day],,CO,2021-07-20
+Belgium,Nationale feestdag,Nationale feestdag,,BE,2021-07-21
+Norway,Søndag,Søndag,,NO,2021-07-25
+Sweden,Söndag,Söndag,,SE,2021-07-25
+Norway,Søndag,Søndag,,NO,2021-08-01
+Sweden,Söndag,Söndag,,SE,2021-08-01
+Switzerland,Nationalfeiertag,Nationalfeiertag,,CH,2021-08-01
+Canada,Civic Holiday,Civic Holiday,,CA,2021-08-02
+Ireland,Summer Bank Holiday,Summer Bank Holiday,,IE,2021-08-02
+Scotland,Summer Bank Holiday,Summer Bank Holiday,,,2021-08-02
+United Kingdom,Summer Bank Holiday [Scotland],Summer Bank Holiday,False,GB,2021-08-02
+Croatia,Dan pobjede i domovinske zahvalnosti,Dan pobjede i domovinske zahvalnosti,,HR,2021-08-05
+Colombia,Batalla de Boyacá [Battle of Boyacá],Batalla de Boyacá [Battle of Boyacá],,CO,2021-08-07
+Norway,Søndag,Søndag,,NO,2021-08-08
+Sweden,Söndag,Söndag,,SE,2021-08-08
+South Africa,National Women's Day,National Women's Day,,ZA,2021-08-09
+Japan,山の日,山の日,,JP,2021-08-11
+Austria,Mariä Himmelfahrt,Mariä Himmelfahrt,,AT,2021-08-15
+Belgium,O.L.V. Hemelvaart,O.L.V. Hemelvaart,,BE,2021-08-15
+Croatia,Velika Gospa,Velika Gospa,,HR,2021-08-15
+France,Assomption,Assomption,,FR,2021-08-15
+India,Independence Day,Independence Day,True,IN,2021-08-15
+Italy,Assunzione della Vergine,Assunzione della Vergine,,IT,2021-08-15
+Norway,Søndag,Søndag,,NO,2021-08-15
+Poland,Wniebowzięcie Najświętszej Marii Panny,Wniebowzięcie Najświętszej Marii Panny,,PL,2021-08-15
+Portugal,Assunção de Nossa Senhora,Assunção de Nossa Senhora,,PT,2021-08-15
+Slovenia,Marijino vnebovzetje,Marijino vnebovzetje,,SI,2021-08-15
+Spain,Asunción de la Virgen,Asunción de la Virgen,,ES,2021-08-15
+Sweden,Söndag,Söndag,,SE,2021-08-15
+Colombia,La Asunción [Assumption of Mary](Observed),La Asunción [Assumption of Mary],,CO,2021-08-16
+Argentina,Día Pase a la Inmortalidad del General D. José de San Martin [Day Pass to the Immortality of General D. José de San Martin],Día Pase a la Inmortalidad del General D. José de San Martin [Day Pass to the Immortality of General D. José de San Martin],,AR,2021-08-17
+Hungary,Az államalapítás ünnepe,Az államalapítás ünnepe,,HU,2021-08-20
+Norway,Søndag,Søndag,,NO,2021-08-22
+Sweden,Söndag,Söndag,,SE,2021-08-22
+Ukraine,День незалежності України,День незалежності України,,UA,2021-08-24
+Norway,Søndag,Søndag,,NO,2021-08-29
+Sweden,Söndag,Söndag,,SE,2021-08-29
+England,Late Summer Bank Holiday,Late Summer Bank Holiday,,,2021-08-30
+Isle of Man,Late Summer Bank Holiday,Late Summer Bank Holiday,,IM,2021-08-30
+Northern Ireland,Late Summer Bank Holiday,Late Summer Bank Holiday,,,2021-08-30
+United Kingdom,"Late Summer Bank Holiday [England, Wales, Northern Ireland]",Late Summer Bank Holiday,True,GB,2021-08-30
+Wales,Late Summer Bank Holiday,Late Summer Bank Holiday,,,2021-08-30
+Norway,Søndag,Søndag,,NO,2021-09-05
+Sweden,Söndag,Söndag,,SE,2021-09-05
+Canada,Labour Day,Labour Day,,CA,2021-09-06
+United States,Labor Day,Labor Day,True,US,2021-09-06
+Brazil,Independência do Brasil,Independência do Brasil,,BR,2021-09-07
+Norway,Søndag,Søndag,,NO,2021-09-12
+Sweden,Söndag,Söndag,,SE,2021-09-12
+Mexico,Día de la Independencia [Independence Day],Día de la Independencia [Independence Day],,MX,2021-09-16
+Norway,Søndag,Søndag,,NO,2021-09-19
+Sweden,Söndag,Söndag,,SE,2021-09-19
+Japan,敬老の日,敬老の日,,JP,2021-09-20
+Japan,秋分の日,秋分の日,,JP,2021-09-23
+South Africa,Heritage Day,Heritage Day,,ZA,2021-09-24
+Norway,Søndag,Søndag,,NO,2021-09-26
+Sweden,Söndag,Söndag,,SE,2021-09-26
+Czech,Den české státnosti,Den české státnosti,,CZ,2021-09-28
+India,Gandhi Jayanti,Gandhi Jayanti,True,IN,2021-10-02
+Germany,Tag der Deutschen Einheit,Tag der Deutschen Einheit,,DE,2021-10-03
+Norway,Søndag,Søndag,,NO,2021-10-03
+Sweden,Söndag,Söndag,,SE,2021-10-03
+Portugal,Implantação da República,Implantação da República,,PT,2021-10-05
+Croatia,Dan neovisnosti,Dan neovisnosti,,HR,2021-10-08
+Norway,Søndag,Søndag,,NO,2021-10-10
+Sweden,Söndag,Söndag,,SE,2021-10-10
+Canada,Thanksgiving,Thanksgiving,,CA,2021-10-11
+Japan,体育の日,体育の日,,JP,2021-10-11
+United States,Columbus Day,Columbus Day,False,US,2021-10-11
+Argentina,Día del Respeto a la Diversidad Cultural [Respect for Cultural Diversity Day],Día del Respeto a la Diversidad Cultural [Respect for Cultural Diversity Day],,AR,2021-10-12
+Brazil,Nossa Senhora Aparecida,Nossa Senhora Aparecida,,BR,2021-10-12
+Spain,Día de la Hispanidad,Día de la Hispanidad,,ES,2021-10-12
+Ukraine,День захисника України,День захисника України,,UA,2021-10-14
+Norway,Søndag,Søndag,,NO,2021-10-17
+Sweden,Söndag,Söndag,,SE,2021-10-17
+Colombia,Descubrimiento de América [Discovery of America](Observed),Descubrimiento de América [Discovery of America],,CO,2021-10-18
+Hungary,Nemzeti ünnep,Nemzeti ünnep,,HU,2021-10-23
+Norway,Søndag,Søndag,,NO,2021-10-24
+Sweden,Söndag,Söndag,,SE,2021-10-24
+Ireland,October Bank Holiday,October Bank Holiday,,IE,2021-10-25
+New Zealand,Labour Day,Labour Day,,NZ,2021-10-25
+Austria,Nationalfeiertag,Nationalfeiertag,,AT,2021-10-26
+Czech,Den vzniku samostatného československého státu,Den vzniku samostatného československého státu,,CZ,2021-10-28
+Norway,Søndag,Søndag,,NO,2021-10-31
+Slovenia,dan reformacije,dan reformacije,,SI,2021-10-31
+Sweden,Söndag,Söndag,,SE,2021-10-31
+Austria,Allerheiligen,Allerheiligen,,AT,2021-11-01
+Belgium,Allerheiligen,Allerheiligen,,BE,2021-11-01
+Colombia,Dia de Todos los Santos [All Saint's Day],Dia de Todos los Santos [All Saint's Day],,CO,2021-11-01
+Croatia,Svi sveti,Svi sveti,,HR,2021-11-01
+France,Toussaint,Toussaint,,FR,2021-11-01
+Hungary,Mindenszentek,Mindenszentek,,HU,2021-11-01
+Italy,Tutti i Santi,Tutti i Santi,,IT,2021-11-01
+Poland,Uroczystość Wszystkich świętych,Uroczystość Wszystkich świętych,,PL,2021-11-01
+Portugal,Dia de Todos os Santos,Dia de Todos os Santos,,PT,2021-11-01
+Slovenia,dan spomina na mrtve,dan spomina na mrtve,,SI,2021-11-01
+Spain,Todos los Santos,Todos los Santos,,ES,2021-11-01
+Brazil,Finados,Finados,,BR,2021-11-02
+Japan,文化の日,文化の日,,JP,2021-11-03
+Finland,Pyhäinpäivä,Pyhäinpäivä,,FI,2021-11-06
+Sweden,Alla helgons dag,Alla helgons dag,,SE,2021-11-06
+Belarus,День Октябрьской революции,День Октябрьской революции,,BY,2021-11-07
+Norway,Søndag,Søndag,,NO,2021-11-07
+Sweden,Söndag,Söndag,,SE,2021-11-07
+Belgium,Wapenstilstand,Wapenstilstand,,BE,2021-11-11
+France,Armistice 1918,Armistice 1918,,FR,2021-11-11
+Poland,Narodowe Święto Niepodległości,Narodowe Święto Niepodległości,,PL,2021-11-11
+United States,Veterans Day,Veterans Day,False,US,2021-11-11
+Norway,Søndag,Søndag,,NO,2021-11-14
+Sweden,Söndag,Söndag,,SE,2021-11-14
+Brazil,Proclamação da República,Proclamação da República,,BR,2021-11-15
+Colombia,Independencia de Cartagena [Independence of Cartagena](Observed),Independencia de Cartagena [Independence of Cartagena],,CO,2021-11-15
+Mexico,Día de la Revolución [Revolution Day] (Observed),Día de la Revolución [Revolution Day],,MX,2021-11-15
+Czech,Den boje za svobodu a demokracii,Den boje za svobodu a demokracii,,CZ,2021-11-17
+Croatia,Dan sjećanja,Dan sjećanja,,HR,2021-11-18
+Argentina,Día Nacional de la Soberanía [National Sovereignty Day],Día Nacional de la Soberanía [National Sovereignty Day],,AR,2021-11-20
+Mexico,Día de la Revolución [Revolution Day],Día de la Revolución [Revolution Day],,MX,2021-11-20
+Norway,Søndag,Søndag,,NO,2021-11-21
+Sweden,Söndag,Söndag,,SE,2021-11-21
+Japan,勤労感謝の日,勤労感謝の日,,JP,2021-11-23
+United States,Thanksgiving,Thanksgiving,True,US,2021-11-25
+Norway,Søndag,Søndag,,NO,2021-11-28
+Sweden,Söndag,Söndag,,SE,2021-11-28
+Scotland,St. Andrew's Day,St. Andrew's Day,,,2021-11-30
+United Kingdom,St. Andrew's Day [Scotland],St. Andrew's Day,False,GB,2021-11-30
+Portugal,Restauração da Independência,Restauração da Independência,,PT,2021-12-01
+Norway,Søndag,Søndag,,NO,2021-12-05
+Sweden,Söndag,Söndag,,SE,2021-12-05
+Finland,Itsenäisyyspäivä,Itsenäisyyspäivä,,FI,2021-12-06
+Spain,Día de la constitución Española,Día de la constitución Española,,ES,2021-12-06
+Argentina,La Inmaculada Concepción [Immaculate Conception],La Inmaculada Concepción [Immaculate Conception],,AR,2021-12-08
+Austria,Mariä Empfängnis,Mariä Empfängnis,,AT,2021-12-08
+Colombia,La Inmaculada Concepción [Immaculate Conception],La Inmaculada Concepción [Immaculate Conception],,CO,2021-12-08
+Italy,Immacolata Concezione,Immacolata Concezione,,IT,2021-12-08
+Portugal,Imaculada Conceição,Imaculada Conceição,,PT,2021-12-08
+Spain,La Inmaculada Concepción,La Inmaculada Concepción,,ES,2021-12-08
+Norway,Søndag,Søndag,,NO,2021-12-12
+Sweden,Söndag,Söndag,,SE,2021-12-12
+South Africa,Day of Reconciliation,Day of Reconciliation,,ZA,2021-12-16
+Norway,Søndag,Søndag,,NO,2021-12-19
+Sweden,Söndag,Söndag,,SE,2021-12-19
+Canada,Christmas Day (Observed),Christmas Day,,CA,2021-12-24
+Czech,Štědrý den,Štědrý den,,CZ,2021-12-24
+Finland,Jouluaatto,Jouluaatto,,FI,2021-12-24
+Hungary,Szenteste,Szenteste,,HU,2021-12-24
+Mexico,Transmisión del Poder Ejecutivo Federal [Change of Federal Government] (Observed),Transmisión del Poder Ejecutivo Federal [Change of Federal Government],,MX,2021-12-24
+Sweden,Julafton,Julafton,,SE,2021-12-24
+United States,Christmas Day (Observed),Christmas Day,True,US,2021-12-24
+Argentina,Navidad [Christmas],Navidad [Christmas],,AR,2021-12-25
+Australia,Christmas Day,Christmas Day,,AU,2021-12-25
+Austria,Christtag,Christtag,,AT,2021-12-25
+Belarus,Рождество Христово (католическое Рождество),Рождество Христово (католическое Рождество),,BY,2021-12-25
+Belgium,Kerstmis,Kerstmis,,BE,2021-12-25
+Brazil,Natal,Natal,,BR,2021-12-25
+Canada,Christmas Day,Christmas Day,,CA,2021-12-25
+Colombia,Navidad [Christmas],Navidad [Christmas],,CO,2021-12-25
+Croatia,Božić,Božić,,HR,2021-12-25
+Czech,1. svátek vánoční,1. svátek vánoční,,CZ,2021-12-25
+Denmark,Juledag,Juledag,,DK,2021-12-25
+England,Christmas Day,Christmas Day,,,2021-12-25
+Finland,Joulupäivä,Joulupäivä,,FI,2021-12-25
+France,Noël,Noël,,FR,2021-12-25
+Germany,Erster Weihnachtstag,Erster Weihnachtstag,,DE,2021-12-25
+Hungary,Karácsony,Karácsony,,HU,2021-12-25
+India,Christmas,Christmas,False,IN,2021-12-25
+Ireland,Christmas Day,Christmas Day,,IE,2021-12-25
+Isle of Man,Christmas Day,Christmas Day,,IM,2021-12-25
+Italy,Natale,Natale,,IT,2021-12-25
+Mexico,Navidad [Christmas],Navidad [Christmas],,MX,2021-12-25
+Netherlands,Eerste Kerstdag,Eerste Kerstdag,,NL,2021-12-25
+New Zealand,Christmas Day,Christmas Day,,NZ,2021-12-25
+Northern Ireland,Christmas Day,Christmas Day,,,2021-12-25
+Norway,Første juledag,Første juledag,,NO,2021-12-25
+Poland,Boże Narodzenie (pierwszy dzień),Boże Narodzenie (pierwszy dzień),,PL,2021-12-25
+Portugal,Dia de Natal,Dia de Natal,,PT,2021-12-25
+Scotland,Christmas Day,Christmas Day,,,2021-12-25
+Slovenia,Božič,Božič,,SI,2021-12-25
+South Africa,Christmas Day,Christmas Day,,ZA,2021-12-25
+Spain,Navidad,Navidad,,ES,2021-12-25
+Sweden,Juldagen,Juldagen,,SE,2021-12-25
+Switzerland,Weihnachten,Weihnachten,,CH,2021-12-25
+Ukraine,Різдво Христове (католицьке),Різдво Христове (католицьке),,UA,2021-12-25
+United Kingdom,Christmas Day,Christmas Day,True,GB,2021-12-25
+United States,Christmas Day,Christmas Day,True,US,2021-12-25
+Wales,Christmas Day,Christmas Day,,,2021-12-25
+Australia,Boxing Day,Boxing Day,,AU,2021-12-26
+Austria,Stefanitag,Stefanitag,,AT,2021-12-26
+Croatia,Sveti Stjepan,Sveti Stjepan,,HR,2021-12-26
+Czech,2. svátek vánoční,2. svátek vánoční,,CZ,2021-12-26
+Denmark,Anden juledag,Anden juledag,,DK,2021-12-26
+England,Boxing Day,Boxing Day,,,2021-12-26
+Finland,Tapaninpäivä,Tapaninpäivä,,FI,2021-12-26
+Germany,Zweiter Weihnachtstag,Zweiter Weihnachtstag,,DE,2021-12-26
+Hungary,Karácsony másnapja,Karácsony másnapja,,HU,2021-12-26
+Ireland,Boxing Day,Boxing Day,,IE,2021-12-26
+Isle of Man,Boxing Day,Boxing Day,,IM,2021-12-26
+Italy,Santo Stefano,Santo Stefano,,IT,2021-12-26
+Netherlands,Tweede Kerstdag,Tweede Kerstdag,,NL,2021-12-26
+New Zealand,Boxing Day,Boxing Day,,NZ,2021-12-26
+Northern Ireland,Boxing Day,Boxing Day,,,2021-12-26
+Norway,"Andre juledag, Søndag","Andre juledag, Søndag",,NO,2021-12-26
+Poland,Boże Narodzenie (drugi dzień),Boże Narodzenie (drugi dzień),,PL,2021-12-26
+Scotland,Boxing Day,Boxing Day,,,2021-12-26
+Slovenia,dan samostojnosti in enotnosti,dan samostojnosti in enotnosti,,SI,2021-12-26
+South Africa,Day of Goodwill,Day of Goodwill,,ZA,2021-12-26
+Sweden,"Annandag jul, Söndag","Annandag jul, Söndag",,SE,2021-12-26
+United Kingdom,Boxing Day,Boxing Day,True,GB,2021-12-26
+Wales,Boxing Day,Boxing Day,,,2021-12-26
+Australia,Christmas Day (Observed),Christmas Day,,AU,2021-12-27
+Canada,Boxing Day (Observed),Boxing Day,,CA,2021-12-27
+England,Christmas Day (Observed),Christmas Day,,,2021-12-27
+Ireland,Christmas Day (Observed),Christmas Day,,IE,2021-12-27
+Isle of Man,Christmas Day (Observed),Christmas Day,,IM,2021-12-27
+New Zealand,Christmas Day (Observed),Christmas Day,,NZ,2021-12-27
+Northern Ireland,Christmas Day (Observed),Christmas Day,,,2021-12-27
+Scotland,Christmas Day (Observed),Christmas Day,,,2021-12-27
+South Africa,Day of Goodwill (Observed),Day of Goodwill,,ZA,2021-12-27
+United Kingdom,Christmas Day (Observed),Christmas Day,True,GB,2021-12-27
+Wales,Christmas Day (Observed),Christmas Day,,,2021-12-27
+Australia,Boxing Day (Observed),Boxing Day,,AU,2021-12-28
+England,Boxing Day (Observed),Boxing Day,,,2021-12-28
+Ireland,Boxing Day (Observed),Boxing Day,,IE,2021-12-28
+Isle of Man,Boxing Day (Observed),Boxing Day,,IM,2021-12-28
+New Zealand,Boxing Day (Observed),Boxing Day,,NZ,2021-12-28
+Northern Ireland,Boxing Day (Observed),Boxing Day,,,2021-12-28
+Scotland,Boxing Day (Observed),Boxing Day,,,2021-12-28
+United Kingdom,Boxing Day (Observed),Boxing Day,True,GB,2021-12-28
+Wales,Boxing Day (Observed),Boxing Day,,,2021-12-28
+Canada,New Year's Day (Observed),New Year's Day,,CA,2021-12-31
+Mexico,Año Nuevo [New Year's Day] (Observed),Año Nuevo [New Year's Day],,MX,2021-12-31
+Sweden,Nyårsafton,Nyårsafton,,SE,2021-12-31
+United States,New Year's Day (Observed),New Year's Day,True,US,2021-12-31

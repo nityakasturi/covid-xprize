@@ -56,7 +56,6 @@ US_PREFIX = "United States / "
 NUM_TRIALS = 1
 LSTM_SIZE = 32
 MAX_NB_COUNTRIES = 20
-LAST_DAY_DATA = '2020-05-20'
 
 
 class Positive(Constraint):
@@ -146,7 +145,7 @@ class XPrizePredictor(object):
     def _get_new_cases_preds(self, c_df, g, npis_df):
         cdf = c_df[c_df.ConfirmedCases.notnull()]
         initial_context_input = self.country_samples[g]['X_test_context'][-1]
-        initial_action_input = self.country_samples[g]['X_test_action'][-1]
+        initial_action_input = self.country_samples[g]['X_test_action'][-1]     
         # Predictions with passed npis
         cnpis_df = npis_df[npis_df.GeoID == g]
         npis_sequence = np.array(cnpis_df[NPI_COLUMNS])
@@ -237,8 +236,6 @@ class XPrizePredictor(object):
         latest_df["GeoID"] = np.where(latest_df["RegionName"].isnull(),
                                       latest_df["CountryName"],
                                       latest_df["CountryName"] + ' / ' + latest_df["RegionName"])
-        latest_df = latest_df[(latest_df['Date'] <= LAST_DAY_DATA)]
-        print(latest_df.tail(14))
         return latest_df
 
     @staticmethod
