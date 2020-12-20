@@ -9,7 +9,8 @@ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # If you'd like to use a model, copy it to "trained_model_weights.h5"
 # or change this MODEL_FILE path to point to your model.
-MODEL_WEIGHTS_FILE = os.path.join(ROOT_DIR, "models", "100_countries_multiple_trials.h5")
+### EDIT WEIGHT FILE HERE
+MODEL_WEIGHTS_FILE = os.path.join(ROOT_DIR, "models", "holidays_confirmed_deaths.h5")
 
 DATA_FILE = os.path.join(ROOT_DIR, 'data', "OxCGRT_latest.csv")
 
