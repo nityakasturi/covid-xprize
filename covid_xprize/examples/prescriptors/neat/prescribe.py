@@ -28,7 +28,7 @@ from covid_xprize.examples.prescriptors.neat.utils import PRED_CASES_COL
 # but this is likely not the most complementary set of prescriptors.
 # Many approaches can be taken to generate/collect more diverse sets.
 # Note: this set can contain up to 10 prescriptors for evaluation.
-PRESCRIPTORS_FILE = 'neat-checkpoint-0'
+PRESCRIPTORS_FILE = 'neat-checkpoint-51'
 
 # Number of days the prescriptors look at in the past.
 NB_LOOKBACK_DAYS = 14
@@ -36,7 +36,7 @@ NB_LOOKBACK_DAYS = 14
 # Number of prescriptions to make per country.
 # This can be set based on how many solutions in PRESCRIPTORS_FILE
 # we want to run and on time constraints.
-NB_PRESCRIPTIONS = 3
+NB_PRESCRIPTIONS = 10
 
 # Number of days to fix prescribed IPs before changing them.
 # This could be a useful toggle for decision makers, who may not
@@ -111,6 +111,7 @@ def prescribe(start_date_str: str,
 
     # Load prescriptors
     checkpoint = neat.Checkpointer.restore_checkpoint(PRESCRIPTORS_FILE)
+    # TODO: just picks the first NB_PRESCRIPTIONS models to use. How can we evaluate best prescriptors and use that?
     prescriptors = list(checkpoint.population.values())[:NB_PRESCRIPTIONS]
     config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction,
                          neat.DefaultSpeciesSet, neat.DefaultStagnation,

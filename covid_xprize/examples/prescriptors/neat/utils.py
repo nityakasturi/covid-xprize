@@ -12,8 +12,8 @@ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.join(ROOT_DIR, 'data')
 HIST_DATA_FILE_PATH = os.path.join(DATA_PATH, 'OxCGRT_latest.csv')
 
-PREDICT_MODULE = 'covid_xprize/standard_predictor/predict.py'
-TMP_PRED_FILE_NAME = 'tmp_predictions_for_prescriptions/preds.csv'
+PREDICT_MODULE = '/home/nitya/covid-xprize/covid_xprize/standard_predictor/predict.py'
+TMP_PRED_FILE_NAME = '/home/nitya/covid-xprize/tmp_predictions_for_prescriptions/preds.csv'
 TMP_PRESCRIPTION_FILE = 'tmp_prescription.csv'
 
 
@@ -118,26 +118,32 @@ def get_predictions(start_date_str, end_date_str, pres_df, countries=None):
     # Go to covid-xprize root dir to access predict script
     wd = os.getcwd()
     os.chdir("../../../..")
+    subprocess.call('cd', shell=True, cwd='/home/nitya/covid-xprize/')
 
     # Run script to generate predictions
-    output_str = subprocess.check_output(
-        [
-            'python', PREDICT_MODULE,
-            '--start_date', start_date_str,
-            '--end_date', end_date_str,
-            '--interventions_plan', ip_file_full_path,
-            '--output_file', TMP_PRED_FILE_NAME
-        ],
-        stderr=subprocess.STDOUT
-    )
+    try: 
+        output_str = subprocess.check_output(
+            [
+                'python', PREDICT_MODULE,
+                '--start_date', start_date_str,
+                '--end_date', end_date_str,
+                '--interventions_plan', ip_file_full_path,
+                '--output_file', TMP_PRED_FILE_NAME
+            ],
+            stderr=subprocess.STDOUT
+        )
+        # Print output from running script
+        print(output_str.decode("utf-8"))
 
-    # Print output from running script
-    print(output_str.decode("utf-8"))
+        # Load predictions to return
+        df = pd.read_csv(TMP_PRED_FILE_NAME)
 
-    # Load predictions to return
-    df = pd.read_csv(TMP_PRED_FILE_NAME)
+        # Return to prescriptor dir
+        os.chdir(wd)
 
-    # Return to prescriptor dir
-    os.chdir(wd)
+        return df
+    except subprocess.CalledProcessError as e:
+        print(e.output)
+        return None
 
-    return df
+    

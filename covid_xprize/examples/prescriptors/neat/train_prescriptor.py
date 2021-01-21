@@ -172,6 +172,7 @@ def eval_genomes(genomes, config):
         # function can lead directly to the degenerate solution of all ips 0, i.e.,
         # stringency zero. To achieve more interesting behavior, a different fitness
         # function may be required.
+        # TODO: fitness function
         new_cases = pred_df[PRED_CASES_COL].mean().mean()
         genome.fitness = -(new_cases * stringency)
 
