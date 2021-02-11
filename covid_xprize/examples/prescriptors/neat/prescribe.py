@@ -8,9 +8,13 @@ import pandas as pd
 from copy import deepcopy
 from datetime import datetime
 
+import math
+
 import neat
 
 # Function imports from utils
+from pathlib import Path
+
 from covid_xprize.examples.prescriptors.neat.utils import add_geo_id
 from covid_xprize.examples.prescriptors.neat.utils import get_predictions
 from covid_xprize.examples.prescriptors.neat.utils import load_ips_file
@@ -22,16 +26,21 @@ from covid_xprize.examples.prescriptors.neat.utils import IP_COLS
 from covid_xprize.examples.prescriptors.neat.utils import IP_MAX_VALUES
 from covid_xprize.examples.prescriptors.neat.utils import PRED_CASES_COL
 
+# Path to where this script lives
+ROOT_DIR = Path(os.path.dirname(os.path.abspath(__file__)))
+
+# Config file for running NEAT (expected to reside in same dir as this script)
+NEAT_CONFIG_FILE = ROOT_DIR / 'config-prescriptor'
 
 # Path to file containing neat prescriptors. Here we simply use a
 # recent checkpoint of the population from train_prescriptor.py,
 # but this is likely not the most complementary set of prescriptors.
 # Many approaches can be taken to generate/collect more diverse sets.
 # Note: this set can contain up to 10 prescriptors for evaluation.
-PRESCRIPTORS_FILE = 'neat-checkpoint-51'
+PRESCRIPTORS_FILE = 'neat-checkpoint-3'
 
 # Number of days the prescriptors look at in the past.
-NB_LOOKBACK_DAYS = 14
+NB_LOOKBACK_DAYS = 21
 
 # Number of prescriptions to make per country.
 # This can be set based on how many solutions in PRESCRIPTORS_FILE
@@ -43,7 +52,7 @@ NB_PRESCRIPTIONS = 10
 # want to change policy every day. Increasing this value also
 # can speed up the prescriptor, at the cost of potentially less
 # interesting prescriptions.
-ACTION_DURATION = 15
+ACTION_DURATION = 14
 
 
 def prescribe(start_date_str: str,
@@ -69,15 +78,16 @@ def prescribe(start_date_str: str,
 
     # Create past case data arrays for all geos
     past_cases = {}
-    for geo in geos:
-        geo_df = df[df['GeoID'] == geo]
-        past_cases[geo] = np.maximum(0, np.array(geo_df[CASES_COL]))
 
     # Create past ip data arrays for all geos
     past_ips = {}
+
+    past_population = {}
     for geo in geos:
-        geo_df = past_ips_df[past_ips_df['GeoID'] == geo]
+        geo_df = df[df['GeoID'] == geo]
+        past_cases[geo] = np.maximum(0, np.array(geo_df[CASES_COL]))
         past_ips[geo] = np.array(geo_df[IP_COLS])
+        past_population[geo] = geo_df["Population"].values[0]
 
     # Fill in any missing case data before start_date
     # using predictor given past_ips_df.
@@ -109,13 +119,19 @@ def prescribe(start_date_str: str,
     # Gather values for scaling network output
     ip_max_values_arr = np.array([IP_MAX_VALUES[ip] for ip in IP_COLS])
 
+    def myfunc(e):
+        fitness = -math.inf if e[1].fitness is None else e[1].fitness
+        return e[1].fitness
+     
     # Load prescriptors
     checkpoint = neat.Checkpointer.restore_checkpoint(PRESCRIPTORS_FILE)
-    # TODO: just picks the first NB_PRESCRIPTIONS models to use. How can we evaluate best prescriptors and use that?
-    prescriptors = list(checkpoint.population.values())[:NB_PRESCRIPTIONS]
+    prescriptors_list = list(checkpoint.population.items())
+    prescriptors_list_filtered = list(filter(lambda v: v[1].fitness != None, prescriptors_list))
+    prescriptors_list_filtered.sort(key = myfunc, reverse=True)
+    prescriptors = [p[1] for p in prescriptors_list_filtered][:NB_PRESCRIPTIONS]
     config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction,
                          neat.DefaultSpeciesSet, neat.DefaultStagnation,
-                         'config-prescriptor')
+                         NEAT_CONFIG_FILE)
 
     # Load IP costs to condition prescriptions
     cost_df = pd.read_csv(path_to_cost_file)
@@ -143,6 +159,7 @@ def prescribe(start_date_str: str,
         # Set initial data
         eval_past_cases = deepcopy(past_cases)
         eval_past_ips = deepcopy(past_ips)
+        eval_past_population = deepcopy(past_population)
 
         # Generate prescriptions iteratively, feeding resulting
         # predictions from the predictor back into the prescriptor.
@@ -151,15 +168,17 @@ def prescribe(start_date_str: str,
 
             # Get prescription for all regions
             for geo in geos:
-
                 # Prepare input data. Here we use log to place cases
                 # on a reasonable scale; many other approaches are possible.
                 X_cases = np.log(eval_past_cases[geo][-NB_LOOKBACK_DAYS:] + 1)
                 X_ips = eval_past_ips[geo][-NB_LOOKBACK_DAYS:]
                 X_costs = geo_costs[geo]
+                X_population = eval_past_population[geo]
                 X = np.concatenate([X_cases.flatten(),
                                     X_ips.flatten(),
-                                    X_costs])
+                                    X_costs,
+                                    [X_population]])
+
 
                 # Get prescription
                 prescribed_ips = net.activate(X)
@@ -168,9 +187,12 @@ def prescribe(start_date_str: str,
                 prescribed_ips = (prescribed_ips * ip_max_values_arr).round()
 
                 # Add it to prescription dictionary for the full ACTION_DURATION
-                country_name, region_name = geo.split('__')
-                if region_name == 'nan':
+                geo_split = geo.split(' / ')
+                if len(geo_split) == 1:
                     region_name = np.nan
+                else:
+                    region_name = geo_split[1]
+                country_name = geo_split[0]
                 for date in pd.date_range(action_start_date, periods=ACTION_DURATION):
                     if date > end_date:
                         break

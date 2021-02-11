@@ -2,19 +2,34 @@
 
 import os
 import subprocess
+import tempfile
 import urllib.request
 import pandas as pd
+import numpy as np
+from pathlib import Path
 
 from covid_xprize.validation.scenario_generator import get_raw_data, generate_scenario
 
+# URL for Oxford data
 DATA_URL = "https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest.csv"
-ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.join(ROOT_DIR, 'data')
-HIST_DATA_FILE_PATH = os.path.join(DATA_PATH, 'OxCGRT_latest.csv')
 
-PREDICT_MODULE = '/home/nitya/covid-xprize/covid_xprize/standard_predictor/predict.py'
-TMP_PRED_FILE_NAME = '/home/nitya/covid-xprize/tmp_predictions_for_prescriptions/preds.csv'
-TMP_PRESCRIPTION_FILE = 'tmp_prescription.csv'
+# Path to where this script lives
+ROOT_DIR = Path(os.path.dirname(os.path.abspath(__file__)))
+
+# Data directory (we will download the Oxford data to here)
+DATA_PATH = ROOT_DIR / 'data'
+
+# Path to Oxford data file
+HIST_DATA_FILE_PATH = DATA_PATH / 'OxCGRT_latest.csv'
+
+# Path to predictor module
+PREDICT_MODULE = ROOT_DIR.parent.parent.parent / 'standard_predictor' / 'predict.py'
+
+ADDITIONAL_CONTEXT_FILE = os.path.join(DATA_PATH, "Additional_Context_Data_Global.csv")
+ADDITIONAL_US_STATES_CONTEXT = os.path.join(DATA_PATH, "US_states_populations.csv")
+ADDITIONAL_UK_CONTEXT = os.path.join(DATA_PATH, "uk_populations.csv")
+ADDITIONAL_BRAZIL_CONTEXT = os.path.join(DATA_PATH, "brazil_populations.csv")
+US_PREFIX = "United States / "
 
 
 CASES_COL = ['NewCases']
@@ -51,7 +66,9 @@ IP_MAX_VALUES = {
 
 
 def add_geo_id(df):
-    df['GeoID'] = df['CountryName'] + '__' + df['RegionName'].astype(str)
+    df["GeoID"] = np.where((df["RegionName"].isnull()) | (df.RegionName.str.len() == 0),
+                                      df["CountryName"],
+                                      df["CountryName"] + ' / ' + df["RegionName"])
     return df
 
 # Function that performs basic loading and preprocessing of historical df
@@ -64,14 +81,18 @@ def prepare_historical_df():
         urllib.request.urlretrieve(DATA_URL, HIST_DATA_FILE_PATH)
 
     # Load raw historical data
-    df = pd.read_csv(HIST_DATA_FILE_PATH,
+    df1 = pd.read_csv(HIST_DATA_FILE_PATH,
                   parse_dates=['Date'],
                   encoding="ISO-8859-1",
                   error_bad_lines=False)
-    df['RegionName'] = df['RegionName'].fillna("")
+    # Additional context df (e.g Population for each country)
+    df2 = load_additional_context_df()
 
     # Add GeoID column for easier manipulation
-    df = add_geo_id(df)
+    df1 = add_geo_id(df1)
+    df1['RegionName'] = df1['RegionName'].fillna("")
+    # Merge the 2 DataFrames
+    df = df1.merge(df2, on=['GeoID'], how='left', suffixes=('', '_y'))
 
     # Add new cases column
     df['NewCases'] = df.groupby('GeoID').ConfirmedCases.diff().fillna(0)
@@ -109,41 +130,64 @@ def get_predictions(start_date_str, end_date_str, pres_df, countries=None):
     hist_df = hist_df[hist_df.Date < start_date]
     ips_df = pd.concat([hist_df, pres_df])
 
-    # Write ips_df to file
-    ips_df.to_csv(TMP_PRESCRIPTION_FILE)
+    with tempfile.NamedTemporaryFile() as tmp_ips_file:
+        # Write ips_df to file
+        ips_df.to_csv(tmp_ips_file.name)
 
-    # Use full path of the local file passed as ip_file
-    ip_file_full_path = os.path.abspath(TMP_PRESCRIPTION_FILE)
+        with tempfile.NamedTemporaryFile() as tmp_pred_file:
+            # Run script to generate predictions
+            output_str = subprocess.check_output(
+                [
+                    'python', PREDICT_MODULE,
+                    '--start_date', start_date_str,
+                    '--end_date', end_date_str,
+                    '--interventions_plan', tmp_ips_file.name,
+                    '--output_file', tmp_pred_file.name
+                ],
+                stderr=subprocess.STDOUT
+            )
 
-    # Go to covid-xprize root dir to access predict script
-    wd = os.getcwd()
-    os.chdir("../../../..")
-    subprocess.call('cd', shell=True, cwd='/home/nitya/covid-xprize/')
+            # Print output from running script
+            print(output_str.decode("utf-8"))
 
-    # Run script to generate predictions
-    try: 
-        output_str = subprocess.check_output(
-            [
-                'python', PREDICT_MODULE,
-                '--start_date', start_date_str,
-                '--end_date', end_date_str,
-                '--interventions_plan', ip_file_full_path,
-                '--output_file', TMP_PRED_FILE_NAME
-            ],
-            stderr=subprocess.STDOUT
-        )
-        # Print output from running script
-        print(output_str.decode("utf-8"))
+            # Load predictions to return
+            df1 = pd.read_csv(tmp_pred_file)
+            df1 = add_geo_id(df1)
 
-        # Load predictions to return
-        df = pd.read_csv(TMP_PRED_FILE_NAME)
+            # Additional context df (e.g Population for each country)
+            df2 = load_additional_context_df()
 
-        # Return to prescriptor dir
-        os.chdir(wd)
+            # Merge the 2 DataFrames
+            df = df1.merge(df2, on=['GeoID'], how='left', suffixes=('', '_y'))
 
-        return df
-    except subprocess.CalledProcessError as e:
-        print(e.output)
-        return None
+    return df
 
-    
+def load_additional_context_df():
+    # File containing the population for each country
+    # Note: this file contains only countries population, not regions
+    additional_context_df = pd.read_csv(ADDITIONAL_CONTEXT_FILE,
+                                        usecols=['CountryName', 'Population'])
+    additional_context_df['GeoID'] = additional_context_df['CountryName']
+
+    # US states population
+    additional_us_states_df = pd.read_csv(ADDITIONAL_US_STATES_CONTEXT,
+                                            usecols=['NAME', 'POPESTIMATE2019'])
+    # Rename the columns to match measures_df ones
+    additional_us_states_df.rename(columns={'POPESTIMATE2019': 'Population'}, inplace=True)
+    # Prefix with country name to match measures_df
+    additional_us_states_df['GeoID'] = US_PREFIX + additional_us_states_df['NAME']
+
+    # Append the new data to additional_df
+    additional_context_df = additional_context_df.append(additional_us_states_df)
+
+    # UK population
+    additional_uk_df = pd.read_csv(ADDITIONAL_UK_CONTEXT)
+    # Append the new data to additional_df
+    additional_context_df = additional_context_df.append(additional_uk_df)
+
+    # Brazil population
+    additional_brazil_df = pd.read_csv(ADDITIONAL_BRAZIL_CONTEXT)
+    # Append the new data to additional_df
+    additional_context_df = additional_context_df.append(additional_brazil_df)
+
+    return additional_context_df

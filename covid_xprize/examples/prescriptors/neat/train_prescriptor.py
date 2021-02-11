@@ -5,13 +5,14 @@
 # Uses neat-python: pip install neat-python
 #
 
+import os
 from copy import deepcopy
 
 import neat
 import numpy as np
 import pandas as pd
-
-
+from pathlib import Path
+from scipy.stats import spearmanr
 
 from covid_xprize.examples.prescriptors.neat.utils import PRED_CASES_COL, prepare_historical_df, CASES_COL, IP_COLS, \
     IP_MAX_VALUES, add_geo_id, get_predictions
@@ -19,13 +20,19 @@ from covid_xprize.examples.prescriptors.neat.utils import PRED_CASES_COL, prepar
 # Cutoff date for training data
 from covid_xprize.validation.cost_generator import generate_costs
 
-CUTOFF_DATE = '2020-07-31'
+# Path where this script lives
+ROOT_DIR = Path(os.path.dirname(os.path.abspath(__file__)))
+
+# Config file for running NEAT (expected to reside in same dir as this script)
+NEAT_CONFIG_FILE = ROOT_DIR / 'config-prescriptor'
+
+CUTOFF_DATE = '2020-10-31'
 
 # Range of days the prescriptors will be evaluated on.
 # To save time during training, this range may be significantly
 # shorter than the maximum days a prescriptor can be evaluated on.
-EVAL_START_DATE = '2020-08-01'
-EVAL_END_DATE = '2020-08-02'
+EVAL_START_DATE = '2020-11-01'
+EVAL_END_DATE = '2020-11-02'
 
 # Number of days the prescriptors will look at in the past.
 # Larger values here may make convergence slower, but give
@@ -33,13 +40,14 @@ EVAL_END_DATE = '2020-08-02'
 # network will be NB_LOOKBACK_DAYS * (IP_COLS + 1) + IP_COLS.
 # The '1' is for previous case data, and the final IP_COLS
 # is for IP cost information.
-NB_LOOKBACK_DAYS = 14
+NB_LOOKBACK_DAYS = 21
 
 # Number of countries to use for training. Again, lower numbers
 # here will make training faster, since there will be fewer
 # input variables, but could potentially miss out on useful info.
-NB_EVAL_COUNTRIES = 10
+NB_EVAL_COUNTRIES = 20
 
+IP_MAX_VALUES_ARR = [3,3,2,4,2,3,2,4,2,3,2,4]
 
 # Load historical data with basic preprocessing
 print("Loading historical data...")
@@ -58,10 +66,12 @@ print("Nets will be evaluated on the following geos:", eval_geos)
 # Pull out historical data for all geos
 past_cases = {}
 past_ips = {}
+past_population = {}
 for geo in eval_geos:
     geo_df = df[df['GeoID'] == geo]
     past_cases[geo] = np.maximum(0, np.array(geo_df[CASES_COL]))
     past_ips[geo] = np.array(geo_df[IP_COLS])
+    past_population[geo] = geo_df["Population"].values[0]
 
 # Gather values for scaling network output
 ip_max_values_arr = np.array([IP_MAX_VALUES[ip] for ip in IP_COLS])
@@ -98,9 +108,14 @@ def eval_genomes(genomes, config):
         # Set initial data
         eval_past_cases = deepcopy(past_cases)
         eval_past_ips = deepcopy(past_ips)
+        eval_past_population = deepcopy(past_population)
 
         # Compute prescribed stringency incrementally
         stringency = 0.
+        fitness = 0.
+
+        stringency_arr = []
+        population_arr = []
 
         # Make prescriptions one day at a time, feeding resulting
         # predictions from the predictor back into the prescriptor.
@@ -115,20 +130,25 @@ def eval_genomes(genomes, config):
                 X_cases = np.log(eval_past_cases[geo][-NB_LOOKBACK_DAYS:] + 1)
                 X_ips = eval_past_ips[geo][-NB_LOOKBACK_DAYS:]
                 X_costs = geo_costs[geo]
+                X_population = eval_past_population[geo]
                 X = np.concatenate([X_cases.flatten(),
                                     X_ips.flatten(),
-                                    X_costs])
+                                    X_costs,
+                                    [X_population]])
 
                 # Get prescription
                 prescribed_ips = net.activate(X)
 
                 # Map prescription to integer outputs
-                prescribed_ips = (prescribed_ips * ip_max_values_arr).round()
+                prescribed_ips = np.minimum(np.round(np.abs(prescribed_ips * ip_max_values_arr)), IP_MAX_VALUES_ARR)
 
                 # Add it to prescription dictionary
-                country_name, region_name = geo.split('__')
-                if region_name == 'nan':
+                geo_split = geo.split(' / ')
+                if len(geo_split) == 1:
                     region_name = np.nan
+                else:
+                    region_name = geo_split[1]
+                country_name = geo_split[0]
                 df_dict['CountryName'].append(country_name)
                 df_dict['RegionName'].append(region_name)
                 df_dict['Date'].append(date_str)
@@ -147,22 +167,42 @@ def eval_genomes(genomes, config):
             pred_df = get_predictions(EVAL_START_DATE, date_str, pres_df)
 
             # Update past data with new day of prescriptions and predictions
-            pres_df['GeoID'] = pres_df['CountryName'] + '__' + pres_df['RegionName'].astype(str)
-            pred_df['RegionName'] = pred_df['RegionName'].fillna("")
-            pred_df['GeoID'] = pred_df['CountryName'] + '__' + pred_df['RegionName'].astype(str)
+            # pres_df['GeoID'] = pres_df['CountryName'] + '__' + pres_df['RegionName'].astype(str)
+            pres_df = add_geo_id(pres_df)
+            # pred_df['RegionName'] = pred_df['RegionName'].fillna("")
+            # pred_df['GeoID'] = pred_df['CountryName'] + '__' + pred_df['RegionName'].astype(str)
+            pred_df = add_geo_id(pred_df)
+            
             new_pres_df = pres_df[pres_df['Date'] == date_str]
             new_pred_df = pred_df[pred_df['Date'] == date_str]
             for geo in eval_geos:
+
                 geo_pres = new_pres_df[new_pres_df['GeoID'] == geo]
                 geo_pred = new_pred_df[new_pred_df['GeoID'] == geo]
 
                 # Append array of prescriptions
                 pres_arr = np.array([geo_pres[ip_col].values[0] for ip_col in IP_COLS]).reshape(1,-1)
                 eval_past_ips[geo] = np.concatenate([eval_past_ips[geo], pres_arr])
+                stringency_geo = np.sum(geo_costs[geo] * pres_arr)
 
                 # Append predicted cases
                 eval_past_cases[geo] = np.append(eval_past_cases[geo],
                                                  geo_pred[PRED_CASES_COL].values[0])
+                cases_geo = geo_pred[PRED_CASES_COL].values[0][0]
+                population = geo_pred["Population"].values[0]
+                # print(geo)
+                # print(cases_geo)
+                # print(geo_pred["Population"].values[0])
+                if population != np.nan: 
+                    cases_geo_pop = cases_geo / (population * 1.0)
+                    # print(cases_geo_pop)
+
+                    stringency_geo = 1. if stringency_geo == 0 else stringency_geo
+                    stringency_arr.append(stringency_geo)
+                    population_arr.append(cases_geo_pop)
+
+                fitness += (stringency_geo * cases_geo)
+
 
         # Compute fitness. There are many possibilities for computing fitness and ranking
         # candidates. Here we choose to minimize the product of ip stringency and predicted
@@ -174,21 +214,29 @@ def eval_genomes(genomes, config):
         # function may be required.
         # TODO: fitness function
         new_cases = pred_df[PRED_CASES_COL].mean().mean()
-        genome.fitness = -(new_cases * stringency)
+        # genome.fitness = -((0.1 * new_cases) + (0.9 * stringency))
+        corr, _ = spearmanr(stringency_arr, population_arr)
+        
+        # genome.fitness = -(fitness / NB_EVAL_COUNTRIES) + (corr * (fitness / NB_EVAL_COUNTRIES))
+        genome.fitness = -(fitness / NB_EVAL_COUNTRIES)
 
         print('Evaluated Genome', genome_id)
         print('New cases:', new_cases)
         print('Stringency:', stringency)
+        print('Correlation:', corr)
         print('Fitness:', genome.fitness)
 
 
 # Load configuration.
 config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction,
                      neat.DefaultSpeciesSet, neat.DefaultStagnation,
-                     'config-prescriptor')
+                     NEAT_CONFIG_FILE)
+
+# TODO: restore checkpoint here if needed
+p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-16')
 
 # Create the population, which is the top-level object for a NEAT run.
-p = neat.Population(config)
+# p = neat.Population(config, checkpoint)
 
 # Add a stdout reporter to show progress in the terminal.
 p.add_reporter(neat.StdOutReporter(show_species_detail=True))
